@@ -1,0 +1,302 @@
+{
+  "approval": {
+    "approved": true,
+    "date": "2026-07-18",
+    "decision": "Apruebo la geometría.",
+    "reviewer": "Usuario de la sesión (identidad no proporcionada)"
+  },
+  "comparison_schema_version": 1,
+  "geometry_version": "sha256:e2fe8dfca6e62bf40a7a1ff2e6b07677a7dcb890925a68d87c2a756e7884beb0",
+  "inputs": {
+    "configuration": {
+      "path": "../../config/geo_compare.json",
+      "sha256": "3f12bb181f8f63b66265c1a1921a75df9b8ee13898101d4bdb6abd3856422795"
+    },
+    "crosswalk": {
+      "path": "../crosswalk/crosswalk.csv",
+      "sha256": "0ca0ed22ccaaa6994d4701bd75da1d1355fcb945f4e7dfaf1b22472743294876"
+    },
+    "geojson": {
+      "path": "../zones/zones.geojson",
+      "sha256": "b76ffaeec4eb9c75ee23991ed9386136d74d94a5bc2603700d65b37e6fb528c2"
+    },
+    "master": {
+      "crs": "EPSG:25830",
+      "layer": "zones",
+      "path": "../zones/zones.gpkg",
+      "sha256": "e2fe8dfca6e62bf40a7a1ff2e6b07677a7dcb890925a68d87c2a756e7884beb0"
+    },
+    "reference": {
+      "content_type": "image/png",
+      "dimensions_pixels": [
+        500,
+        835
+      ],
+      "license_status": "not_found",
+      "metadata_path": "reference.json",
+      "metadata_sha256": "7c6d06a47873573706ccff168a8fa3ac70907c06fa35fdc96b63eb018fe81363",
+      "retrieved_at_utc": "2026-07-18T08:14:20Z",
+      "sha256": "df1c7c08765bcdae51a36d4efbd414911b975d75de878a04faf364cc8b905f7f",
+      "size_bytes": 44982,
+      "snapshot": "snapshots/zonasprevifoc/df1c7c08765bcdae51a36d4efbd414911b975d75de878a04faf364cc8b905f7f.png",
+      "url_final": "https://wpr.112cv.gva.es/external/api/storage/descargar/imagen/static/images/avisosmeteorologicos/zonasprevifoc.png",
+      "url_requested": "https://wpr.112cv.gva.es/external/api/storage/descargar/imagen/static/images/avisosmeteorologicos/zonasprevifoc.png"
+    },
+    "requirements": {
+      "path": "../../requirements-geo-004.txt",
+      "sha256": "749be61170424a335fa308dbff2538ab580e159779df9090a4261fd66205be27"
+    }
+  },
+  "outputs": {
+    "REPORT.md": {
+      "sha256": "bb9d7ebcbe4cab90d5b2719dbac7740bf82b3ab0cb8a24260ae543abaf4ef2c5",
+      "size_bytes": 9093
+    },
+    "comparison/overlay.png": {
+      "dimensions_pixels": [
+        500,
+        835
+      ],
+      "sha256": "cc537618d186e2c6a4bbc5452a3b4826f93569e9249acc42562765c47d44dc75",
+      "size_bytes": 87877
+    },
+    "comparison/side-by-side.png": {
+      "dimensions_pixels": [
+        1020,
+        835
+      ],
+      "sha256": "a815d5f3184e0c1ccbab9c17c4a084ece1b4ca53fd40199f985e18dce8b6e280",
+      "size_bytes": 144409
+    },
+    "control-points.csv": {
+      "sha256": "204614dee4eeac5e228ce6733a4c7e8f2b2155418c1838e085a68577585a14b3",
+      "size_bytes": 4226
+    },
+    "details/central-hole-and-zone4.png": {
+      "dimensions_pixels": [
+        1280,
+        600
+      ],
+      "sha256": "1cb7846a2a46a104f0926eb3d9b623acc7be3f7cb2d46eae78e132445560c58d",
+      "size_bytes": 166477
+    },
+    "details/east-coast-components.png": {
+      "dimensions_pixels": [
+        1040,
+        1510
+      ],
+      "sha256": "ab12bd74aadf25813f608a33b65ca1044d233941708cdfe83fbfe5c0ada7bc17",
+      "size_bytes": 252986
+    },
+    "details/north-and-rincon.png": {
+      "dimensions_pixels": [
+        2020,
+        660
+      ],
+      "sha256": "c315ea0ff088ac032dba660ca63a84eebaa4f907787deaf7e1b844a9a70980aa",
+      "size_bytes": 285069
+    },
+    "details/south-extreme.png": {
+      "dimensions_pixels": [
+        1500,
+        670
+      ],
+      "sha256": "5de947a1a5c403db3c441e08578f7d1269e32f9683567d152320c38a5b3b977c",
+      "size_bytes": 172658
+    },
+    "discrepancies.json": {
+      "sha256": "b7bb06462f328a9efeaac77147c0b9047819ea8fd097b46f58831d34dc48622b",
+      "size_bytes": 1854
+    },
+    "render/zones-exact-1000x1670.png": {
+      "dimensions_pixels": [
+        1000,
+        1670
+      ],
+      "sha256": "c36bc38d09092ae6c365af4ced180158fd510c6760f81731704d3c75bec17dc8",
+      "size_bytes": 211056
+    },
+    "render/zones-registered-500x835.png": {
+      "dimensions_pixels": [
+        500,
+        835
+      ],
+      "sha256": "54e4b5a868d539db8660a03a94dec1c8617b63e0607d477fc0baa9edf53d3ed7",
+      "size_bytes": 86470
+    }
+  },
+  "policies": {
+    "comparison": "qualitative_visual_not_pixel_metric",
+    "geometry": "exact GEO-003 coordinates; no simplification, filtering, hole filling or coordinate changes",
+    "reference": "original bytes preserved; all crops/scales are separate derivatives",
+    "style": "diagnostic_only_not_tile_design"
+  },
+  "registration": {
+    "control_points": [
+      {
+        "geometry_epsg25830": [
+          739206.0050120337,
+          4519161.348652295
+        ],
+        "id": "north_extreme",
+        "predicted_pixel": [
+          296.2357155077086,
+          8.0
+        ],
+        "reference_pixel": [
+          296.0,
+          8.0
+        ],
+        "residual_distance_pixels": 0.23571550770861904,
+        "residual_pixels": [
+          0.23571550770861904,
+          0.0
+        ]
+      },
+      {
+        "geometry_epsg25830": [
+          695675.3866064397,
+          4190817.4264318813
+        ],
+        "id": "south_extreme",
+        "predicted_pixel": [
+          187.78831189817083,
+          826.0
+        ],
+        "reference_pixel": [
+          188.0,
+          826.0
+        ],
+        "residual_distance_pixels": 0.21168810182916786,
+        "residual_pixels": [
+          -0.21168810182916786,
+          0.0
+        ]
+      },
+      {
+        "geometry_epsg25830": [
+          626576.388804259,
+          4368255.079760789
+        ],
+        "id": "west_extreme",
+        "predicted_pixel": [
+          15.642654929863738,
+          383.9513108038809
+        ],
+        "reference_pixel": [
+          15.0,
+          384.0
+        ],
+        "residual_distance_pixels": 0.6444967002994577,
+        "residual_pixels": [
+          0.6426549298637383,
+          -0.048689196119084954
+        ]
+      },
+      {
+        "geometry_epsg25830": [
+          815520.5301336278,
+          4422736.799690668
+        ],
+        "id": "east_island_extreme",
+        "predicted_pixel": [
+          486.35734507013626,
+          248.22153514284764
+        ],
+        "reference_pixel": [
+          486.0,
+          248.0
+        ],
+        "residual_distance_pixels": 0.42044419209594885,
+        "residual_pixels": [
+          0.3573450701362617,
+          0.22153514284764242
+        ]
+      }
+    ],
+    "geometry_bbox_epsg25830": [
+      626576.388804259,
+      4190817.4264318813,
+      815520.5301336278,
+      4519161.348652295
+    ],
+    "horizontal_alignment": "bbox_centres",
+    "method": "uniform_scale_translation_with_y_inversion",
+    "nonlinear_deformation": false,
+    "reference_shape_bbox_pixels": [
+      14.0,
+      8.0,
+      488.0,
+      826.0
+    ],
+    "scale_basis": "north_south_extent",
+    "scale_pixels_per_metre": 0.002491290213226136,
+    "translate_x_pixels": -1545.340970336761,
+    "translate_y_pixels": 11266.54243988729,
+    "x_pixel": "scale * easting + translate_x",
+    "y_pixel": "-scale * northing + translate_y"
+  },
+  "software": {
+    "geos": "3.13.1",
+    "numpy": "2.5.1",
+    "pillow": "11.3.0",
+    "pillow_libjpeg": "6.2",
+    "pillow_zlib": "1.3.1.zlib-ng",
+    "proj": "9.5.1",
+    "pyproj": "3.7.2",
+    "python": "3.13.2",
+    "python_implementation": "CPython",
+    "shapely": "2.1.2",
+    "sqlite": "3.51.2",
+    "zlib_compile": "1.2.12",
+    "zlib_runtime": "1.2.12"
+  },
+  "statistics": {
+    "controls": {
+      "adjacent_boundary_pairs_checked": 9,
+      "municipalities_loaded": 542,
+      "shared_boundary_lengths_m": {
+        "C02": 12099.07176793324,
+        "C03": 16566.18578477956,
+        "C04": 11487.430361541723,
+        "C05": 13586.450609541165,
+        "C06": 4046.729718114784,
+        "C07": 9290.28756591006,
+        "C08": 14922.08871744156,
+        "C09": 5032.098010990838,
+        "C10": 8634.099738695797
+      },
+      "versioned_controls": 15,
+      "zone_id_by_code": {
+        "1N": 53,
+        "1S": 54,
+        "2": 55,
+        "3": 56,
+        "4": 57,
+        "5": 58,
+        "6": 59
+      }
+    },
+    "discrepancies": {
+      "bloqueante": 0,
+      "corregible": 0,
+      "explicable": 3
+    },
+    "zone_codes": [
+      "1N",
+      "1S",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "zone_features": 7
+  },
+  "status": "approved",
+  "unresolved_conditions": {
+    "formal_confirmation_previfoc_is_union_of_complete_municipalities": false,
+    "human_approval": "approved",
+    "specific_112cv_license": "not_found"
+  }
+}

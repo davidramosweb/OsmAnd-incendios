@@ -1,0 +1,24 @@
+{
+  "content_type": "image/png",
+  "dimensions_pixels": [
+    500,
+    835
+  ],
+  "http": {
+    "accept_ranges": "bytes",
+    "cache_control": "public, max-age=43200",
+    "content_disposition": "inline; filename=\"zonasprevifoc.png\"",
+    "status": 200
+  },
+  "license": {
+    "declared_license": null,
+    "note": "El acceso público no se interpreta como licencia de reutilización.",
+    "status": "not_found"
+  },
+  "retrieved_at_utc": "2026-07-18T08:14:20Z",
+  "sha256": "df1c7c08765bcdae51a36d4efbd414911b975d75de878a04faf364cc8b905f7f",
+  "size_bytes": 44982,
+  "snapshot": "snapshots/zonasprevifoc/df1c7c08765bcdae51a36d4efbd414911b975d75de878a04faf364cc8b905f7f.png",
+  "url_final": "https://wpr.112cv.gva.es/external/api/storage/descargar/imagen/static/images/avisosmeteorologicos/zonasprevifoc.png",
+  "url_requested": "https://wpr.112cv.gva.es/external/api/storage/descargar/imagen/static/images/avisosmeteorologicos/zonasprevifoc.png"
+}

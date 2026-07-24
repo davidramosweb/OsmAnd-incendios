@@ -1,0 +1,10 @@
+# OSMAND-001: ejemplo para un tunel NOMBRADO y separado del resto de servicios.
+# Sustituir los tres valores OSMAND_*; no reutilizar ni modificar un tunel ajeno.
+tunnel: OSMAND_TUNNEL_ID
+credentials-file: OSMAND_TUNNEL_CREDENTIALS_JSON
+
+ingress:
+  - hostname: OSMAND_HTTPS_HOSTNAME
+    path: ^/tiles/.*
+    service: http://127.0.0.1:8765
+  - service: http_status:404

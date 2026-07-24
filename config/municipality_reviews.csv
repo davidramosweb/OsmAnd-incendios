@@ -1,0 +1,87 @@
+municipio_112cv,cod_ine_mun,review_categories,icv_noms_mun_observed,decision,reviewed_at,review_note
+Ademuz,46001,required_sample,Ademuz,approved,2026-07-18,Muestra mínima contrastada con la fila ICV y el código oficial.
+Alacant/Alicante,03014,required_sample;bilingual,Alacant/Alicante,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Alboraia/Alboraya,46013,bilingual,Alboraia/Alboraya,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Alcoi/Alcoy,03009,bilingual,Alcoi/Alcoy,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Alcora, l'",12005,postposed_article,l'Alcora,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Alcúdia de Crespins, l'",46020,postposed_article,l'Alcúdia de Crespins,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Alcúdia, l'",46019,postposed_article,l'Alcúdia,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Alfarp,46026,alias,Alfarb,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Alfàs del Pi, l'",03011,postposed_article,l'Alfàs del Pi,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Algar de Palancia,46028,alias,Algar de Palància,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Alqueria d'Asnar, l'",03017,postposed_article,l'Alqueria d'Asnar,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Alqueria de la Comtessa, l'",46037,postposed_article,l'Alqueria de la Comtessa,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Alqueries, les/Alquerías del Niño Perdido",12901,bilingual;postposed_article;alias,les Alqueries/Alquerías del Niño Perdido,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Atzúbia, l'",03001,postposed_article,l'Atzúbia,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Benicàssim/Benicasim,12028,bilingual,Benicàssim/Benicasim,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Borriana/Burriana,12032,bilingual,Borriana/Burriana,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Camp de Mirra, el/Campo de Mirra",03051,bilingual;postposed_article;alias,el Camp de Mirra/Campo de Mirra,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Campello, el",03050,postposed_article,el Campello,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Castell de Guadalest, el",03075,postposed_article,el Castell de Guadalest,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Chilches/Xilxes,12053,bilingual,Chilches/Xilxes,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Coves de Vinromà, les",12050,postposed_article,les Coves de Vinromà,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Eliana, l'",46116,postposed_article,l'Eliana,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Elx/Elche,03065,bilingual,Elx/Elche,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Fondó de les Neus, el/Hondón de las Nieves",03077,bilingual;postposed_article;alias,el Fondó de les Neus/Hondón de las Nieves,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Font d'en Carròs, la",46127,postposed_article,la Font d'en Carròs,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Font de la Figuera, la",46128,postposed_article,la Font de la Figuera,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Genovés, el",46132,postposed_article,el Genovés,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Granja de la Costera, la",46137,postposed_article,la Granja de la Costera,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Jana, la",12070,postposed_article,la Jana,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Llosa de Ranes, la",46157,postposed_article,la Llosa de Ranes,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Llosa, la",12074,postposed_article,la Llosa,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Llucena/Lucena del Cid,12072,bilingual,Llucena/Lucena del Cid,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Mata de Morella, la",12075,postposed_article,la Mata de Morella,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Moixent/Mogente,46170,bilingual,Moixent/Mogente,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Montesinos, Los",03903,postposed_article,Los Montesinos,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Montitxelvo/Montichelvo,46175,bilingual,Montitxelvo/Montichelvo,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Montroi/Montroy,46176,bilingual,Montroi/Montroy,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Monòver/Monóvar,03089,bilingual,Monòver/Monóvar,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Novetlè/Novelé,46180,bilingual;alias,Novetlè,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Nucia, la",03094,postposed_article,la Nucia,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Nàquera/Náquera,46178,bilingual,Nàquera/Náquera,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Olleria, l'",46183,postposed_article,l'Olleria,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Orpesa/Oropesa del Mar,12085,bilingual,Orpesa/Oropesa del Mar,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Orxa, l'/Lorcha",03084,bilingual;postposed_article;alias,l'Orxa/Lorcha,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Palomar, el",46189,postposed_article,el Palomar,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Peníscola/Peñíscola,12089,bilingual,Peníscola/Peñíscola,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Pinós, el/Pinoso",03105,bilingual;postposed_article,"Pinós, el/Pinoso",approved,2026-07-18,Ambas formas lingüísticas y el artículo pospuesto se contrastaron con las variantes ICV.
+"Pobla de Benifassà, la",12093,postposed_article;alias,La Pobla de Benifassà,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Pobla de Farnals, la",46199,postposed_article,la Pobla de Farnals,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Pobla de Vallbona, la",46202,postposed_article,la Pobla de Vallbona,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Pobla del Duc, la",46200,postposed_article,la Pobla del Duc,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Pobla Llarga, la",46203,postposed_article,la Pobla Llarga,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Pobla Tornesa, la",12094,postposed_article,la Pobla Tornesa,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Poble Nou de Benitatxell, el/Benitachell",03042,bilingual;postposed_article;alias,el Poble Nou de Benitatxell/Benitachell,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Poblets, els",03901,postposed_article,els Poblets,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Puig de Santa Maria, el",46204,postposed_article,el Puig de Santa Maria,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Real de Gandia, el",46211,postposed_article,el Real de Gandia,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Romana, la",03114,postposed_article,la Romana,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Ràfol d'Almúnia, el",03110,postposed_article,el Ràfol d'Almúnia,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Sagunt/Sagunto,46220,bilingual,Sagunt/Sagunto,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Salzadella, la",12098,postposed_article,la Salzadella,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Sant Jordi/San Jorge,12099,bilingual,Sant Jordi/San Jorge,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Sant Vicent del Raspeig/San Vicente del Raspeig,03122,bilingual,Sant Vicent del Raspeig/San Vicente del Raspeig,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Serratella, la",12103,postposed_article,la Serratella,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Suera/Sueras,12108,bilingual,Suera/Sueras,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Toro, El",12115,postposed_article,El Toro,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Torre d'en Besora, la",12119,postposed_article;alias,la Torre d'En Besora,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Torre d'en Doménec, la",12120,postposed_article,la Torre d'en Doménec,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Torre de les Maçanes, la/Torremanzanas",03132,bilingual;postposed_article;alias,la Torre de les Maçanes/Torremanzanas,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Useres, les/Useras",12122,bilingual;postposed_article;alias,les Useres/Useras,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+"Vall d'Alcalà, la",03134,postposed_article,la Vall d'Alcalà,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Vall d'Ebo, la",03135,postposed_article,la Vall d'Ebo,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Vall d'Uixó, la",12126,postposed_article,la Vall d'Uixó,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Vall de Gallinera, la",03136,postposed_article,la Vall de Gallinera,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Vall de Laguar, la",03137,postposed_article,la Vall de Laguar,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+València,46250,required_sample,València,approved,2026-07-18,Muestra mínima contrastada con la fila ICV y el código oficial.
+"Verger, el",03138,postposed_article,el Verger,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Vila Joiosa, la/Villajoyosa",03139,bilingual;postposed_article;alias,la Vila Joiosa/Villajoyosa,approved,2026-07-18,Excepción contrastada con el código y las variantes ICV; motivo detallado en municipality_aliases.json.
+Vilafranca/Villafranca del Cid,12129,bilingual,Vilafranca/Villafranca del Cid,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Vilallonga/Villalonga,46255,bilingual,Vilallonga/Villalonga,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Vilavella, la",12136,postposed_article,la Vilavella,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+Xixona/Jijona,03083,bilingual,Xixona/Jijona,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Xodos/Chodos,12055,bilingual,Xodos/Chodos,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+Xàbia/Jávea,03082,bilingual,Xàbia/Jávea,approved,2026-07-18,Ambas formas lingüísticas se contrastaron con noms_mun y las variantes ICV.
+"Yesa, La",46262,postposed_article,La Yesa,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.
+"Énova, l'",46119,postposed_article,l'Énova,approved,2026-07-18,El artículo pospuesto se contrastó con la forma principal y las variantes ICV.

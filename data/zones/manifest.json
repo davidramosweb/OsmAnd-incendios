@@ -1,0 +1,553 @@
+{
+  "geometry_quality": "derived_from_official_municipal_assignment",
+  "geometry_schema_version": 1,
+  "inputs": {
+    "configuration": {
+      "path": "../../config/geo_zones.json",
+      "sha256": "5b77b6575090b45e21227c629b7cf55a5912e99e29aaced5683a71c1e0a35ae5"
+    },
+    "crosswalk": {
+      "path": "../crosswalk/crosswalk.csv",
+      "sha256": "0ca0ed22ccaaa6994d4701bd75da1d1355fcb945f4e7dfaf1b22472743294876"
+    },
+    "crosswalk_manifest": {
+      "path": "../crosswalk/manifest.json",
+      "sha256": "3c2d1694dc577b309d0c741f43ed413fcee247ef46c8ac61d62aa3ffa59824e3"
+    },
+    "icv": {
+      "path": "../sources/snapshots/icv_municipios/acf27959034b7ad4610b413a6323f1b68e2e0d6d71d72ed74f25b96c3a1dc276.gpkg",
+      "sha256": "acf27959034b7ad4610b413a6323f1b68e2e0d6d71d72ed74f25b96c3a1dc276"
+    },
+    "requirements": {
+      "path": "../../requirements-geo.txt",
+      "sha256": "1632936ffbaf4dc43041d5c86ee962fbf990c0244bb82717e36b38661c1c142a"
+    },
+    "source_manifest": {
+      "path": "../sources/manifest.json",
+      "sha256": "b00cb94217dc0a2ce0402b78c5e8b68549dd4f638a13d74d64cbdaf56087de06"
+    }
+  },
+  "licenses": {
+    "icv_municipios": {
+      "attribution": "Delimitación territorial: Municipios de la Comunitat Valenciana, Institut Cartogràfic Valencià / Generalitat Valenciana, CC BY 4.0.",
+      "declared_license": "CC BY 4.0 Generalitat",
+      "evidence_urls": [
+        "https://terramapas.icv.gva.es/0105_Delimitaciones?service=WFS&request=GetCapabilities&version=2.0.0",
+        "https://dadesobertes.gva.es/es/dataset/delimitacion-territorial-municipios-de-la-comunitat-valenciana"
+      ],
+      "note": "Declarada literalmente en ows:AccessConstraints del WFS 2.0.0 y como Creative Commons Attribution en el catalogo oficial.",
+      "status": "declared"
+    },
+    "municipal_assignment_112cv": {
+      "declared_license": null,
+      "evidence_urls": [
+        "https://wpr.112cv.gva.es/wp/api/municipios",
+        "https://www.112cv.gva.es/es/incendios-forestales"
+      ],
+      "note": "No se ha encontrado una licencia especifica ni condiciones de API publicadas; el acceso publico no se interpreta como licencia.",
+      "status": "not_found"
+    }
+  },
+  "outputs": {
+    "REPORT.md": {
+      "sha256": "7cde0b585994259d781d90b7e9d8ed5d4597cc30a683d44d733d29c6d3c87877",
+      "size_bytes": 6230
+    },
+    "zones.geojson": {
+      "coordinate_order": "longitude, latitude",
+      "crs_interpretation": "EPSG:4326 per RFC 7946",
+      "features": 7,
+      "geometry_type": "MultiPolygon",
+      "sha256": "b76ffaeec4eb9c75ee23991ed9386136d74d94a5bc2603700d65b37e6fb528c2",
+      "size_bytes": 35040330
+    },
+    "zones.gpkg": {
+      "crs": "EPSG:25830",
+      "features": 7,
+      "geometry_type": "MULTIPOLYGON",
+      "layer": "zones",
+      "sha256": "e2fe8dfca6e62bf40a7a1ff2e6b07677a7dcb890925a68d87c2a756e7884beb0",
+      "size_bytes": 6180864
+    }
+  },
+  "policies": {
+    "determinism": {
+      "entity_order": "zone_id ascending",
+      "geojson_coordinate_precision": 9,
+      "geometry": "canonical ring orientation/start and sorted holes/parts; no simplification",
+      "gpkg_timestamp_utc": "2026-07-18T00:00:00.000Z"
+    },
+    "repair": {
+      "keep_collapsed": true,
+      "method": "linework",
+      "operation": "shapely.make_valid"
+    },
+    "tolerances": {
+      "coverage_absolute_m2": 0.0001,
+      "coverage_relative": 1e-12,
+      "geojson_roundtrip_absolute_m2": 10.0,
+      "geojson_roundtrip_relative": 1e-09,
+      "overlap_absolute_m2": 0.0001,
+      "overlap_relative": 1e-12,
+      "repair_absolute_m2": 0.0001,
+      "repair_relative": 1e-12
+    }
+  },
+  "software": {
+    "geos": "3.13.1",
+    "geos_capi": "3.13.1-CAPI-1.19.2",
+    "numpy": "2.5.1",
+    "proj": "9.5.1",
+    "pyproj": "3.7.2",
+    "python": "3.13.2",
+    "python_implementation": "CPython",
+    "shapely": "2.1.2",
+    "sqlite": "3.51.2"
+  },
+  "statistics": {
+    "geojson_roundtrip": {
+      "coordinate_precision": 9,
+      "passes": true,
+      "per_zone": [
+        {
+          "passes": true,
+          "symmetric_difference_m2": 8.227981235169844,
+          "tolerance_m2": 10.0,
+          "zone_id": 53
+        },
+        {
+          "passes": true,
+          "symmetric_difference_m2": 5.128811259996616,
+          "tolerance_m2": 10.0,
+          "zone_id": 54
+        },
+        {
+          "passes": true,
+          "symmetric_difference_m2": 8.533710233437052,
+          "tolerance_m2": 10.0,
+          "zone_id": 55
+        },
+        {
+          "passes": true,
+          "symmetric_difference_m2": 5.590275001064648,
+          "tolerance_m2": 10.0,
+          "zone_id": 56
+        },
+        {
+          "passes": true,
+          "symmetric_difference_m2": 6.52466508420046,
+          "tolerance_m2": 10.0,
+          "zone_id": 57
+        },
+        {
+          "passes": true,
+          "symmetric_difference_m2": 8.158412723529452,
+          "tolerance_m2": 10.0,
+          "zone_id": 58
+        },
+        {
+          "passes": true,
+          "symmetric_difference_m2": 6.058298150285533,
+          "tolerance_m2": 10.0,
+          "zone_id": 59
+        }
+      ]
+    },
+    "join": {
+      "crosswalk_codes": 542,
+      "crosswalk_without_icv": 0,
+      "icv_codes": 542,
+      "icv_without_crosswalk": 0,
+      "matched": 542,
+      "preserved_as_text_five_digits": true
+    },
+    "municipal_geometries": {
+      "invalid_before_repair": 1,
+      "municipalities_inspected": 542,
+      "repairs_applied": 1,
+      "valid_after_repair": 542,
+      "valid_before_repair": 541
+    },
+    "repairs": [
+      {
+        "after": {
+          "area_m2": 76568041.35184035,
+          "bbox_epsg25830": [
+            703993.0009062085,
+            4312123.9,
+            727239.9901840548,
+            4327841.529457771
+          ],
+          "holes": 18,
+          "parts": 29,
+          "valid": true
+        },
+        "area_delta_absolute_m2": 4.470348358154297e-08,
+        "area_delta_relative": 5.838399780415505e-16,
+        "area_delta_signed_m2": 4.470348358154297e-08,
+        "before": {
+          "area_m2": 76568041.3518403,
+          "bbox_epsg25830": [
+            703993.0009062085,
+            4312123.9,
+            727239.9901840548,
+            4327841.529457771
+          ],
+          "holes": 18,
+          "parts": 30,
+          "valid": false
+        },
+        "cod_ine_mun": "46145",
+        "discarded_non_polygonal_components": [
+          {
+            "area_m2": 0.0,
+            "geometry_type": "LineString",
+            "length_m": 5.589746953170743
+          }
+        ],
+        "effect": "Se fusionan dos partes que compartían un segmento; se conserva toda la superficie, el bbox y los huecos. El segmento colapsado se registra como linework de área cero y no representa una isla.",
+        "municipality": "Xàtiva",
+        "operation": "shapely.make_valid(method='linework', keep_collapsed=True) y extracción de la componente poligonal",
+        "reason": "Self-intersection[709369.141817707 4318531.9671089]",
+        "symmetric_difference_m2": 0.0,
+        "tolerance_m2": 0.0001,
+        "within_tolerance": true
+      }
+    ],
+    "topology": {
+      "coverage": {
+        "municipal_union_area_m2": 23272224413.48791,
+        "passes": true,
+        "relative_symmetric_difference": 0.0,
+        "symmetric_difference_m2": 0.0,
+        "tolerance_m2": 0.02327222441348791,
+        "zone_area_sum_m2": 23272224413.488487,
+        "zone_union_area_m2": 23272224413.48812
+      },
+      "overlaps": {
+        "max_area_m2": 0.0,
+        "pairs": [
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 53,
+            "passes": true,
+            "right_zone_id": 54,
+            "tolerance_m2": 0.0019935509217013543
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 53,
+            "passes": true,
+            "right_zone_id": 55,
+            "tolerance_m2": 0.0019935509217013543
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 53,
+            "passes": true,
+            "right_zone_id": 56,
+            "tolerance_m2": 0.0019935509217013543
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 53,
+            "passes": true,
+            "right_zone_id": 57,
+            "tolerance_m2": 0.0010307393223359057
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 53,
+            "passes": true,
+            "right_zone_id": 58,
+            "tolerance_m2": 0.0019935509217013543
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 53,
+            "passes": true,
+            "right_zone_id": 59,
+            "tolerance_m2": 0.0019935509217013543
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 54,
+            "passes": true,
+            "right_zone_id": 55,
+            "tolerance_m2": 0.0020835196248432616
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 54,
+            "passes": true,
+            "right_zone_id": 56,
+            "tolerance_m2": 0.002324474549651284
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 54,
+            "passes": true,
+            "right_zone_id": 57,
+            "tolerance_m2": 0.0010307393223359057
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 54,
+            "passes": true,
+            "right_zone_id": 58,
+            "tolerance_m2": 0.002324474549651284
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 54,
+            "passes": true,
+            "right_zone_id": 59,
+            "tolerance_m2": 0.002324474549651284
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 55,
+            "passes": true,
+            "right_zone_id": 56,
+            "tolerance_m2": 0.0020835196248432616
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 55,
+            "passes": true,
+            "right_zone_id": 57,
+            "tolerance_m2": 0.0010307393223359057
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 55,
+            "passes": true,
+            "right_zone_id": 58,
+            "tolerance_m2": 0.0020835196248432616
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 55,
+            "passes": true,
+            "right_zone_id": 59,
+            "tolerance_m2": 0.0020835196248432616
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 56,
+            "passes": true,
+            "right_zone_id": 57,
+            "tolerance_m2": 0.0010307393223359057
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 56,
+            "passes": true,
+            "right_zone_id": 58,
+            "tolerance_m2": 0.005423915816108098
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 56,
+            "passes": true,
+            "right_zone_id": 59,
+            "tolerance_m2": 0.0023486481579852924
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 57,
+            "passes": true,
+            "right_zone_id": 58,
+            "tolerance_m2": 0.0010307393223359057
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 57,
+            "passes": true,
+            "right_zone_id": 59,
+            "tolerance_m2": 0.0010307393223359057
+          },
+          {
+            "area_m2": 0.0,
+            "left_zone_id": 58,
+            "passes": true,
+            "right_zone_id": 59,
+            "tolerance_m2": 0.0023486481579852924
+          }
+        ],
+        "pairs_checked": 21,
+        "passes": true
+      }
+    },
+    "zone_counts": {
+      "53": 28,
+      "54": 64,
+      "55": 40,
+      "56": 113,
+      "57": 61,
+      "58": 190,
+      "59": 46
+    },
+    "zones": [
+      {
+        "area_m2": 1993550921.7013545,
+        "bbox_epsg25830": [
+          721352.978852832,
+          4455128.552808288,
+          780071.455,
+          4519161.348652295
+        ],
+        "bbox_epsg4326": [
+          -0.381513886,
+          40.209054375,
+          0.310787349,
+          40.788631201
+        ],
+        "geometry_sha256": "972053c8ca188f112680ad50815da68468c47f38154da238893f9caee8bd2f72",
+        "holes": 0,
+        "municipalities": 28,
+        "parts": 1,
+        "valid": true,
+        "zone_code": "1N",
+        "zone_id": 53
+      },
+      {
+        "area_m2": 2324474549.651284,
+        "bbox_epsg25830": [
+          683987.3270133189,
+          4406581.2660350455,
+          748916.0818979114,
+          4473094.663011267
+        ],
+        "bbox_epsg4326": [
+          -0.846296899,
+          39.779894609,
+          -0.076146616,
+          40.375707234
+        ],
+        "geometry_sha256": "a7c410cab864c51dc4fe759ee83d8953873186d51e27ac3f1ce212da68bcb001",
+        "holes": 0,
+        "municipalities": 64,
+        "parts": 1,
+        "valid": true,
+        "zone_code": "1S",
+        "zone_id": 54
+      },
+      {
+        "area_m2": 2083519624.8432617,
+        "bbox_epsg25830": [
+          730434.1752519498,
+          4400674.152518368,
+          815520.5301336278,
+          4501523.359
+        ],
+        "bbox_epsg4326": [
+          -0.308568311,
+          39.721921657,
+          0.690315074,
+          40.617094935
+        ],
+        "geometry_sha256": "bc31a8f1c3fa5adcec3f1318ca14d07f5f50f5610bd1617e8fb8774711cbfff9",
+        "holes": 0,
+        "municipalities": 40,
+        "parts": 29,
+        "valid": true,
+        "zone_code": "2",
+        "zone_id": 55
+      },
+      {
+        "area_m2": 8067376020.863291,
+        "bbox_epsg25830": [
+          626576.388804259,
+          4306793.699978019,
+          730536.1548212525,
+          4452641.113799981
+        ],
+        "bbox_epsg4326": [
+          -1.528811131,
+          38.891586182,
+          -0.311132193,
+          40.211683158
+        ],
+        "geometry_sha256": "b9d3c784c6ecda35551b1f9d307361662e4ad0e1b36afa3c1344a8e6390cc213",
+        "holes": 1,
+        "municipalities": 113,
+        "parts": 2,
+        "valid": true,
+        "zone_code": "3",
+        "zone_id": 56
+      },
+      {
+        "area_m2": 1030739322.3359058,
+        "bbox_epsg25830": [
+          705047.8380023213,
+          4331894.461822666,
+          740981.3917450452,
+          4409132.717997521
+        ],
+        "bbox_epsg4326": [
+          -0.617179275,
+          39.103424466,
+          -0.18845302,
+          39.8014343
+        ],
+        "geometry_sha256": "1356a386be519cc52b9f3f9ccffa5f5811f9e9c6baefe8c070779dd8beea8222",
+        "holes": 0,
+        "municipalities": 61,
+        "parts": 5,
+        "valid": true,
+        "zone_code": "4",
+        "zone_id": 57
+      },
+      {
+        "area_m2": 5423915816.108098,
+        "bbox_epsg25830": [
+          666334.5999613479,
+          4245931.999999502,
+          781105.710069961,
+          4340617.0
+        ],
+        "bbox_epsg4326": [
+          -1.094161755,
+          38.34540297,
+          0.234072522,
+          39.186060965
+        ],
+        "geometry_sha256": "7a1e31a631d3f09c454db64049e6d06358bf3ed6bdaaa0234c6f6abbce903892",
+        "holes": 0,
+        "municipalities": 190,
+        "parts": 67,
+        "valid": true,
+        "zone_code": "5",
+        "zone_id": 58
+      },
+      {
+        "area_m2": 2348648157.9852924,
+        "bbox_epsg25830": [
+          669653.5000004051,
+          4190817.4264318813,
+          747033.1107915273,
+          4271857.559539751
+        ],
+        "bbox_epsg4326": [
+          -1.058611799,
+          37.84377891,
+          -0.166246616,
+          38.562769158
+        ],
+        "geometry_sha256": "d4066ce1b2695c3ff7f0572bddd1fa3760da772108ba3274db3e3e41fb8ec6e2",
+        "holes": 0,
+        "municipalities": 46,
+        "parts": 154,
+        "valid": true,
+        "zone_code": "6",
+        "zone_id": 59
+      }
+    ]
+  },
+  "unresolved_conditions": {
+    "formal_confirmation_previfoc_is_union_of_complete_municipalities": false,
+    "official_jpeg_comparison": "deferred_to_GEO-004",
+    "specific_112cv_license": "not_found"
+  }
+}

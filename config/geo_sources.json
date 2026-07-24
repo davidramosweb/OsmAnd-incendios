@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "client": {
+    "timeout_seconds": 120,
+    "user_agent": "OsmAnd-incendios-GEO-001/1.0 (reproducible official-source snapshot)"
+  },
+  "sources": {
+    "municipios_112cv": {
+      "accept": "application/json",
+      "expected": {
+        "allowed_zone_ids": [
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
+        ],
+        "assigned_municipalities": 542,
+        "outside_record": {
+          "idZonaAvisoMeteo": 0,
+          "idZonaEmergencia": 0,
+          "idZonaPrevifoc": 0,
+          "municipio": "Fuera C.V."
+        },
+        "required_fields": [
+          "municipio",
+          "idZonaPrevifoc",
+          "idZonaAvisoMeteo",
+          "idZonaEmergencia"
+        ],
+        "zone_counts": {
+          "53": 28,
+          "54": 64,
+          "55": 40,
+          "56": 113,
+          "57": 61,
+          "58": 190,
+          "59": 46
+        }
+      },
+      "file_extension": "json",
+      "kind": "municipios_json",
+      "license": {
+        "declared_license": null,
+        "evidence_urls": [
+          "https://wpr.112cv.gva.es/wp/api/municipios",
+          "https://www.112cv.gva.es/es/incendios-forestales"
+        ],
+        "note": "No se ha encontrado una licencia especifica ni condiciones de API publicadas; el acceso publico no se interpreta como licencia.",
+        "status": "not_found"
+      },
+      "manual_sample_values": [
+        "Ademuz",
+        "València",
+        "Alacant/Alicante"
+      ],
+      "max_bytes": 2097152,
+      "publisher": "112 Comunitat Valenciana / Generalitat Valenciana",
+      "url": "https://wpr.112cv.gva.es/wp/api/municipios"
+    },
+    "icv_municipios": {
+      "accept": "application/geopackage+sqlite3, application/octet-stream;q=0.8",
+      "catalog_url": "https://dadesobertes.gva.es/es/dataset/delimitacion-territorial-municipios-de-la-comunitat-valenciana",
+      "expected": {
+        "code_field": "cod_ine_mun",
+        "crs": {
+          "organization": "EPSG",
+          "organization_coordsys_id": 25830
+        },
+        "feature_count": 542,
+        "geometry_type": "MULTIPOLYGON",
+        "layer": "ICV.Municipios",
+        "name_field": "nom_mun",
+        "required_fields": [
+          "fid",
+          "geom",
+          "cod_ine_mun",
+          "nom_mun"
+        ]
+      },
+      "file_extension": "gpkg",
+      "kind": "geopackage",
+      "license": {
+        "attribution": "Delimitación territorial: Municipios de la Comunitat Valenciana, Institut Cartogràfic Valencià / Generalitat Valenciana, CC BY 4.0.",
+        "declared_license": "CC BY 4.0 Generalitat",
+        "evidence_urls": [
+          "https://terramapas.icv.gva.es/0105_Delimitaciones?service=WFS&request=GetCapabilities&version=2.0.0",
+          "https://dadesobertes.gva.es/es/dataset/delimitacion-territorial-municipios-de-la-comunitat-valenciana"
+        ],
+        "note": "Declarada literalmente en ows:AccessConstraints del WFS 2.0.0 y como Creative Commons Attribution en el catalogo oficial.",
+        "status": "declared"
+      },
+      "manual_sample_field": "noms_mun",
+      "manual_sample_values": [
+        "Ademuz",
+        "València",
+        "Alacant/Alicante"
+      ],
+      "max_bytes": 104857600,
+      "publisher": "Institut Cartogràfic Valencià / Generalitat Valenciana",
+      "url": "https://terramapas.icv.gva.es/0105_Delimitaciones?outputformat=gpkg&request=GetFeature&service=WFS&typename=ICV.Municipios&version=2.0.0"
+    }
+  }
+}

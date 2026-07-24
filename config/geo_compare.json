@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "approval": {
+    "date": "2026-07-18",
+    "decision": "Apruebo la geometría.",
+    "reviewer": "Usuario de la sesión (identidad no proporcionada)"
+  },
+  "geometry_version": "sha256:e2fe8dfca6e62bf40a7a1ff2e6b07677a7dcb890925a68d87c2a756e7884beb0",
+  "inputs": {
+    "crosswalk": {
+      "path": "../data/crosswalk/crosswalk.csv",
+      "sha256": "0ca0ed22ccaaa6994d4701bd75da1d1355fcb945f4e7dfaf1b22472743294876"
+    },
+    "geojson": {
+      "path": "../data/zones/zones.geojson",
+      "sha256": "b76ffaeec4eb9c75ee23991ed9386136d74d94a5bc2603700d65b37e6fb528c2"
+    },
+    "master": {
+      "crs": "EPSG:25830",
+      "layer": "zones",
+      "path": "../data/zones/zones.gpkg",
+      "sha256": "e2fe8dfca6e62bf40a7a1ff2e6b07677a7dcb890925a68d87c2a756e7884beb0"
+    },
+    "municipal_source": "../data/sources/snapshots/icv_municipios/acf27959034b7ad4610b413a6323f1b68e2e0d6d71d72ed74f25b96c3a1dc276.gpkg",
+    "reference_metadata": "../data/geo-004/reference.json",
+    "requirements": "../requirements-geo-004.txt"
+  },
+  "output_directory": "../data/geo-004",
+  "expected_zones": [
+    {"zone_id": 53, "zone_code": "1N", "parts": 1, "holes": 0},
+    {"zone_id": 54, "zone_code": "1S", "parts": 1, "holes": 0},
+    {"zone_id": 55, "zone_code": "2", "parts": 29, "holes": 0},
+    {"zone_id": 56, "zone_code": "3", "parts": 2, "holes": 1},
+    {"zone_id": 57, "zone_code": "4", "parts": 5, "holes": 0},
+    {"zone_id": 58, "zone_code": "5", "parts": 67, "holes": 0},
+    {"zone_id": 59, "zone_code": "6", "parts": 154, "holes": 0}
+  ],
+  "render": {
+    "canvas_pixels": [500, 835],
+    "diagnostic_scale": 2,
+    "background": "#FFFFFF",
+    "outline": "#111111",
+    "outline_width_pixels": 1.35,
+    "overlay_outline": "#D1007F",
+    "overlay_fill": "#00A6D6",
+    "supersampling": 4,
+    "zone_fills": {
+      "1N": "#E8F0FF",
+      "1S": "#F3E8FF",
+      "2": "#E8F7EE",
+      "3": "#FFF1D9",
+      "4": "#FFE8E8",
+      "5": "#E6F7F7",
+      "6": "#F3F0E8"
+    },
+    "labels": {
+      "1N": [307, 81],
+      "1S": [247, 215],
+      "2": [358, 163],
+      "3": [147, 385],
+      "4": [262, 391],
+      "5": [245, 575],
+      "6": [195, 724]
+    },
+    "label_font": "PillowEmbeddedAileronRegular-11.3.0",
+    "label_size_pixels": 36
+  },
+  "registration": {
+    "method": "uniform_scale_translation_with_y_inversion",
+    "reference_shape_bbox_pixels": [14, 8, 488, 826],
+    "scale_basis": "north_south_extent",
+    "horizontal_alignment": "bbox_centres",
+    "nonlinear_deformation": false,
+    "control_points": [
+      {"id": "north_extreme", "geometry_epsg25830": [739206.0050120337, 4519161.348652295], "reference_pixel": [296, 8]},
+      {"id": "south_extreme", "geometry_epsg25830": [695675.3866064397, 4190817.4264318813], "reference_pixel": [188, 826]},
+      {"id": "west_extreme", "geometry_epsg25830": [626576.388804259, 4368255.079760789], "reference_pixel": [15, 384]},
+      {"id": "east_island_extreme", "geometry_epsg25830": [815520.5301336278, 4422736.799690668], "reference_pixel": [486, 248]}
+    ]
+  },
+  "details": [
+    {"name": "north-and-rincon", "crop_pixels": [0, 0, 500, 330], "scale": 2},
+    {"name": "central-hole-and-zone4", "crop_pixels": [150, 300, 360, 500], "scale": 3},
+    {"name": "east-coast-components", "crop_pixels": [245, 80, 500, 835], "scale": 2},
+    {"name": "south-extreme", "crop_pixels": [80, 500, 450, 835], "scale": 2}
+  ],
+  "controls": [
+    {
+      "id": "C01",
+      "expected_zones": "3",
+      "municipality_or_feature": "Rincón de Ademuz; Ademuz (46001)",
+      "municipalities": [{"code": "46001", "zone": "3"}],
+      "geometry_evidence": "Zona 3 tiene dos partes; Ademuz está cubierto por el componente noroccidental separado.",
+      "reference_evidence": "El componente separado aparece al oeste de 1S y está integrado visualmente en la zona rotulada 3.",
+      "result": "coincide",
+      "limitations": "El PNG no rotula municipios ni está georreferenciado."
+    },
+    {
+      "id": "C02",
+      "expected_zones": "1N|1S",
+      "municipality_or_feature": "Culla (12051) / Atzeneta del Maestrat (12001)",
+      "municipalities": [{"code": "12051", "zone": "1N"}, {"code": "12001", "zone": "1S"}],
+      "geometry_evidence": "Los términos comparten el límite 1N/1S.",
+      "reference_evidence": "La frontera 1N/1S es continua y separa inequívocamente ambas rotulaciones.",
+      "result": "coincide",
+      "limitations": "La línea oficial tiene grosor y antialiasing."
+    },
+    {
+      "id": "C03",
+      "expected_zones": "1N|2",
+      "municipality_or_feature": "Rossell (12096) / Canet lo Roig (12036)",
+      "municipalities": [{"code": "12096", "zone": "1N"}, {"code": "12036", "zone": "2"}],
+      "geometry_evidence": "Los términos comparten la frontera oriental 1N/2.",
+      "reference_evidence": "La frontera oriental de 1N desemboca en la zona 2 con la misma posición relativa.",
+      "result": "coincide",
+      "limitations": "No se pueden identificar términos individuales en el PNG."
+    },
+    {
+      "id": "C04",
+      "expected_zones": "1S|2",
+      "municipality_or_feature": "Alfondeguilla (12007) / la Vall d'Uixó (12126)",
+      "municipalities": [{"code": "12007", "zone": "1S"}, {"code": "12126", "zone": "2"}],
+      "geometry_evidence": "Los términos comparten la frontera meridional 1S/2.",
+      "reference_evidence": "La cuña meridional de 1S y el corredor de 2 se reconocen en la referencia.",
+      "result": "coincide",
+      "limitations": "Comparación visual, no medición cartográfica."
+    },
+    {
+      "id": "C05",
+      "expected_zones": "1S|3",
+      "municipality_or_feature": "Jérica (12071) / Altura (12012)",
+      "municipalities": [{"code": "12071", "zone": "1S"}, {"code": "12012", "zone": "3"}],
+      "geometry_evidence": "Los términos comparten un tramo largo de frontera 1S/3.",
+      "reference_evidence": "El escalón entre 1S y la gran zona 3 coincide en posición y forma general.",
+      "result": "coincide",
+      "limitations": "Generalización y grosor de línea a 500 px."
+    },
+    {
+      "id": "C06",
+      "expected_zones": "2|4",
+      "municipality_or_feature": "la Vall d'Uixó (12126) / Sagunt (46220)",
+      "municipalities": [{"code": "12126", "zone": "2"}, {"code": "46220", "zone": "4"}],
+      "geometry_evidence": "Los términos comparten la transición costera 2/4.",
+      "reference_evidence": "El extremo sur de 2 conecta con la estrecha zona 4 en el mismo punto relativo.",
+      "result": "coincide",
+      "limitations": "Etiquetas próximas y trazo negro ocultan detalles finos."
+    },
+    {
+      "id": "C07",
+      "expected_zones": "3|4",
+      "municipality_or_feature": "Albalat dels Tarongers (46010) / Sagunt (46220)",
+      "municipalities": [{"code": "46010", "zone": "3"}, {"code": "46220", "zone": "4"}],
+      "geometry_evidence": "Los términos comparten la frontera 3/4 al oeste de la costa.",
+      "reference_evidence": "La franja 4 queda encajada entre 3 y la costa como en la geometría.",
+      "result": "coincide",
+      "limitations": "La marca de agua y el código 4 reducen legibilidad local."
+    },
+    {
+      "id": "C08",
+      "expected_zones": "3|5",
+      "municipality_or_feature": "Tous (46246) / Alzira (46017)",
+      "municipalities": [{"code": "46246", "zone": "3"}, {"code": "46017", "zone": "5"}],
+      "geometry_evidence": "Los términos comparten la frontera principal 3/5.",
+      "reference_evidence": "La base de 3 y la cabecera de 5 coinciden en forma y posición relativa.",
+      "result": "coincide",
+      "limitations": "La referencia no muestra nombres municipales."
+    },
+    {
+      "id": "C09",
+      "expected_zones": "4|5",
+      "municipality_or_feature": "Cullera (46105) / Tavernes de la Valldigna (46238)",
+      "municipalities": [{"code": "46105", "zone": "4"}, {"code": "46238", "zone": "5"}],
+      "geometry_evidence": "Los términos comparten la transición costera 4/5.",
+      "reference_evidence": "El extremo sur estrecho de 4 termina contra 5 en la misma posición.",
+      "result": "coincide",
+      "limitations": "Resolución y antialiasing de la línea costera."
+    },
+    {
+      "id": "C10",
+      "expected_zones": "5|6",
+      "municipality_or_feature": "Xixona/Jijona (03083) / Alacant/Alicante (03014)",
+      "municipalities": [{"code": "03083", "zone": "5"}, {"code": "03014", "zone": "6"}],
+      "geometry_evidence": "Los términos comparten un tramo reconocible de frontera 5/6.",
+      "reference_evidence": "La frontera 5/6 y el cambio de anchura hacia el sur coinciden.",
+      "result": "coincide",
+      "limitations": "La línea oficial no permite medir desplazamientos subpíxel."
+    },
+    {
+      "id": "C11",
+      "expected_zones": "3|5",
+      "municipality_or_feature": "Hueco de zona 3 y componente enclavado de Alzira (46017), zona 5",
+      "municipalities": [{"code": "46017", "zone": "5"}],
+      "geometry_evidence": "El único hueco de 3 coincide exactamente con una parte de zona 5 de 28.486.811,49 m².",
+      "reference_evidence": "La referencia muestra el pequeño enclave blanco conectado visualmente con la rotulación/contorno de 5 dentro de 3.",
+      "result": "coincide",
+      "limitations": "La marca de agua y los rótulos 3/4 ocultan parte del contorno."
+    },
+    {
+      "id": "C12",
+      "expected_zones": "4",
+      "municipality_or_feature": "Discontinuidades de zona 4: Sagunt (46220) y València (46250)",
+      "municipalities": [{"code": "46220", "zone": "4"}, {"code": "46250", "zone": "4"}],
+      "geometry_evidence": "Zona 4 conserva cinco partes; cuatro son microcomponentes de Sagunt/València.",
+      "reference_evidence": "La forma principal estrecha de 4 es reconocible; los microcomponentes quedan en el límite de resolución.",
+      "result": "coincide_con_limitacion",
+      "limitations": "Tres componentes miden menos de un píxel a esta escala."
+    },
+    {
+      "id": "C13",
+      "expected_zones": "2|4|5|6",
+      "municipality_or_feature": "Pequeñas partes costeras e insulares de zonas 2, 4, 5 y 6",
+      "municipalities": [],
+      "geometry_evidence": "Se renderizan las 29, 5, 67 y 154 partes respectivas sin filtrado.",
+      "reference_evidence": "La referencia conserva las partes visibles, incluidos los puntos insulares al este de 2; muchas partes menores son subpíxel.",
+      "result": "coincide_con_limitacion",
+      "limitations": "La ausencia visual de una microparte subpíxel no prueba ausencia cartográfica."
+    },
+    {
+      "id": "C14",
+      "expected_zones": "1N|6",
+      "municipality_or_feature": "Extremos norte y sur",
+      "municipalities": [],
+      "geometry_evidence": "Extremos proyectados a (296,2; 8,0) y (187,8; 826,0) px con la transformación fijada.",
+      "reference_evidence": "Los extremos visibles están en aproximadamente (296,8) y (188,826).",
+      "result": "coincide",
+      "limitations": "Lectura manual del borde antialiasado."
+    },
+    {
+      "id": "C15",
+      "expected_zones": "1N|1S|2|3|4|5|6",
+      "municipality_or_feature": "Costa completa y posición relativa de las siete zonas",
+      "municipalities": [],
+      "geometry_evidence": "Las siete MultiPolygon se dibujan completas, sin simplificación, relleno de huecos ni filtrado de partes.",
+      "reference_evidence": "Silueta, costa, orden norte-sur y fronteras internas son inequívocamente equivalentes.",
+      "result": "coincide",
+      "limitations": "El PNG es una representación gráfica no georreferenciada de 500×835 px."
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "D01",
+      "location": "Microcomponentes costeros e insulares de zonas 2, 4, 5 y 6",
+      "zones": ["2", "4", "5", "6"],
+      "evidence": "La geometría conserva 29, 5, 67 y 154 partes; varias proyectan menos de un píxel y no pueden distinguirse individualmente en la referencia.",
+      "classification": "explicable",
+      "possible_origin": ["imagen o versión oficial", "transformación exclusivamente visual usada en GEO-004"],
+      "decision": "Conservar todas las partes canónicas; no filtrar ni modificar geometría."
+    },
+    {
+      "id": "D02",
+      "location": "Costa y fronteras internas en toda la Comunitat",
+      "zones": ["1N", "1S", "2", "3", "4", "5", "6"],
+      "evidence": "Se observan diferencias locales de grosor/antialiasing y posibles desplazamientos subpíxel, sin contradicción de asignación o forma.",
+      "classification": "explicable",
+      "possible_origin": ["imagen o versión oficial", "geometría ICV", "transformación exclusivamente visual usada en GEO-004"],
+      "decision": "No cuantificar como diferencia cartográfica; usar composición y detalles para inspección cualitativa."
+    },
+    {
+      "id": "D03",
+      "location": "Centro: zonas 3, 4 y enclave de 5",
+      "zones": ["3", "4", "5"],
+      "evidence": "La marca de agua y las etiquetas cubren parte de los contornos finos en la referencia.",
+      "classification": "explicable",
+      "possible_origin": ["imagen o versión oficial"],
+      "decision": "Apoyar la revisión con render limpio y vista ampliada; no inferir una frontera oculta."
+    }
+  ]
+}

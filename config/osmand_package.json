@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "artifact_version": "2.0.0",
+  "plugin_version": 2,
+  "plugin_id": "com.davidramosweb.previfoc",
+  "source_name": "PREVIFOC para OsmAnd (no oficial)",
+  "source_name_en": "PREVIFOC for OsmAnd (unofficial)",
+  "current_source_name": "PREVIFOC — Hoy (no oficial)",
+  "forecast_source_name": "PREVIFOC — Mañana (previsión)",
+  "public_origin": "https://previfoc.davidramosweb.com",
+  "current_tile_url": "https://previfoc.davidramosweb.com/tiles/current/{0}/{1}/{2}.png",
+  "forecast_tile_url": "https://previfoc.davidramosweb.com/tiles/forecast-next-day/{0}/{1}/{2}.png",
+  "help_url": "https://previfoc.davidramosweb.com/#instalar",
+  "attribution_url": "https://previfoc.davidramosweb.com/#atribucion",
+  "limitations_url": "https://previfoc.davidramosweb.com/#limitaciones",
+  "official_source_url": "https://www.112cv.gva.es/es/incendios-forestales",
+  "min_zoom": 6,
+  "max_zoom": 14,
+  "expire_minutes": 60,
+  "tile_size": 256,
+  "bit_density": 8,
+  "average_tile_size": 18000
+}

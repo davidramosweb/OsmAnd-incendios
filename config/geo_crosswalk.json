@@ -1,0 +1,64 @@
+{
+  "aliases": "municipality_aliases.json",
+  "expected": {
+    "allowed_zone_ids": [
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "municipality_count": 542,
+    "outside_record": {
+      "idZonaAvisoMeteo": 0,
+      "idZonaEmergencia": 0,
+      "idZonaPrevifoc": 0,
+      "municipio": "Fuera C.V."
+    },
+    "zone_counts": {
+      "53": 28,
+      "54": 64,
+      "55": 40,
+      "56": 113,
+      "57": 61,
+      "58": 190,
+      "59": 46
+    }
+  },
+  "icv": {
+    "code_field": "cod_ine_mun",
+    "geometry_field": "geom",
+    "layer": "ICV.Municipios",
+    "name_fields": [
+      "nom_mun",
+      "nom_mun_cas",
+      "nom_mun_cas_a",
+      "nom_mun_val",
+      "nom_mun_val_a",
+      "noms_mun"
+    ]
+  },
+  "output_directory": "../data/crosswalk",
+  "provenance": {
+    "icv_municipios": {
+      "dataset_content_sha256": "f384ce5ec703a3f2ed4173337f8d80aa24e502cf015f2a3124f30a29506130df",
+      "sha256": "acf27959034b7ad4610b413a6323f1b68e2e0d6d71d72ed74f25b96c3a1dc276",
+      "snapshot": "snapshots/icv_municipios/acf27959034b7ad4610b413a6323f1b68e2e0d6d71d72ed74f25b96c3a1dc276.gpkg"
+    },
+    "municipios_112cv": {
+      "dataset_content_sha256": "a1a2c18581507e2c19167a5cd9633110abddd8484bf93296be23ee88f54c6d06",
+      "sha256": "5d80c0b9a40c29beca831c964ef11b254d0f5a0c5c765acd77dc355ddd54370d",
+      "snapshot": "snapshots/municipios_112cv/5d80c0b9a40c29beca831c964ef11b254d0f5a0c5c765acd77dc355ddd54370d.json"
+    }
+  },
+  "required_manual_samples": [
+    "Ademuz",
+    "València",
+    "Alacant/Alicante"
+  ],
+  "reviews": "municipality_reviews.csv",
+  "schema_version": 1,
+  "source_manifest": "../data/sources/manifest.json"
+}

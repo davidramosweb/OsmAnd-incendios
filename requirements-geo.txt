@@ -1,0 +1,5 @@
+# Entorno reproducible usado para GEO-003 (Python 3.13.x).
+certifi==2026.6.17
+numpy==2.5.1
+pyproj==3.7.2
+shapely==2.1.2

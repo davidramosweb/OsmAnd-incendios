@@ -1,0 +1,268 @@
+{
+  "config": "../../config/geo_sources.json",
+  "config_sha256": "45ba66026b472dcfbb46575dd6fe3e88b83fa8b425766f9492b9dbe3a2a11761",
+  "created_at_utc": "2026-07-18T06:48:29Z",
+  "manifest_schema_version": 1,
+  "sources": {
+    "icv_municipios": {
+      "catalog_url": "https://dadesobertes.gva.es/es/dataset/delimitacion-territorial-municipios-de-la-comunitat-valenciana",
+      "final_url": "https://terramapas.icv.gva.es/0105_Delimitaciones?outputformat=gpkg&request=GetFeature&service=WFS&typename=ICV.Municipios&version=2.0.0",
+      "format": "OGC GeoPackage",
+      "http": {
+        "response_headers": {
+          "content-disposition": "attachment; filename=Delimitaciones.gpkg",
+          "content-type": "application/geopackage+sqlite3",
+          "date": "Sat, 18 Jul 2026 06:48:28 GMT"
+        },
+        "status": 200
+      },
+      "inspection": {
+        "application_id": 1196444487,
+        "code_field": "cod_ine_mun",
+        "crs": {
+          "definition": "PROJCS[\"ETRS89 / UTM zone 30N\",GEOGCS[\"ETRS89\",DATUM[\"European_Terrestrial_Reference_System_1989\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6258\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4258\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"25830\"]]",
+          "description": null,
+          "organization": "EPSG",
+          "organization_coordsys_id": 25830,
+          "srs_id": 25830,
+          "srs_name": "ETRS89 / UTM zone 30N"
+        },
+        "dataset_content_sha256": "f384ce5ec703a3f2ed4173337f8d80aa24e502cf015f2a3124f30a29506130df",
+        "feature_count": 542,
+        "fields": [
+          {
+            "name": "fid",
+            "nullable": false,
+            "primary_key": true,
+            "type": "INTEGER"
+          },
+          {
+            "name": "geom",
+            "nullable": true,
+            "primary_key": false,
+            "type": "MULTIPOLYGON"
+          },
+          {
+            "name": "id",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "cod_ine_mun",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "cod_ine_mun_d",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "cod_catastro",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "nom_mun",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "nom_mun_cas",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "nom_mun_cas_a",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "nom_mun_val",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "nom_mun_val_a",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "noms_mun",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "comarca",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "provincia",
+            "nullable": true,
+            "primary_key": false,
+            "type": "TEXT"
+          },
+          {
+            "name": "perimetro",
+            "nullable": true,
+            "primary_key": false,
+            "type": "REAL"
+          },
+          {
+            "name": "area_ha",
+            "nullable": true,
+            "primary_key": false,
+            "type": "REAL"
+          }
+        ],
+        "format": "OGC GeoPackage",
+        "geometry_column": "geom",
+        "geometry_type": "MULTIPOLYGON",
+        "integrity_check": "ok",
+        "layer": "ICV.Municipios",
+        "layer_bounds": {
+          "max_x": 815520.5301336278,
+          "max_y": 4519161.348652294,
+          "min_x": 626576.388804259,
+          "min_y": 4190817.426431881
+        },
+        "layer_last_change": "2026-07-18T06:48:28.881Z",
+        "manual_samples": [
+          {
+            "cod_ine_mun": "46001",
+            "nom_mun": "Ademuz",
+            "nom_mun_cas": "Ademuz",
+            "nom_mun_val": "Ademuz",
+            "noms_mun": "Ademuz"
+          },
+          {
+            "cod_ine_mun": "46250",
+            "nom_mun": "València",
+            "nom_mun_cas": "València",
+            "nom_mun_val": "València",
+            "noms_mun": "València"
+          },
+          {
+            "cod_ine_mun": "03014",
+            "nom_mun": "Alacant",
+            "nom_mun_cas": "Alicante",
+            "nom_mun_val": "Alacant",
+            "noms_mun": "Alacant/Alicante"
+          }
+        ],
+        "media_type": "application/geopackage+sqlite3",
+        "name_field": "nom_mun",
+        "non_empty_geometries": 542,
+        "user_version": 10200
+      },
+      "license": {
+        "attribution": "Delimitación territorial: Municipios de la Comunitat Valenciana, Institut Cartogràfic Valencià / Generalitat Valenciana, CC BY 4.0.",
+        "declared_license": "CC BY 4.0 Generalitat",
+        "evidence_urls": [
+          "https://terramapas.icv.gva.es/0105_Delimitaciones?service=WFS&request=GetCapabilities&version=2.0.0",
+          "https://dadesobertes.gva.es/es/dataset/delimitacion-territorial-municipios-de-la-comunitat-valenciana"
+        ],
+        "note": "Declarada literalmente en ows:AccessConstraints del WFS 2.0.0 y como Creative Commons Attribution en el catalogo oficial.",
+        "status": "declared"
+      },
+      "publisher": "Institut Cartogràfic Valencià / Generalitat Valenciana",
+      "request": {
+        "accept": "application/geopackage+sqlite3, application/octet-stream;q=0.8",
+        "user_agent": "OsmAnd-incendios-GEO-001/1.0 (reproducible official-source snapshot)"
+      },
+      "retrieved_at_utc": "2026-07-18T06:48:29Z",
+      "sha256": "acf27959034b7ad4610b413a6323f1b68e2e0d6d71d72ed74f25b96c3a1dc276",
+      "size_bytes": 9138176,
+      "snapshot": "snapshots/icv_municipios/acf27959034b7ad4610b413a6323f1b68e2e0d6d71d72ed74f25b96c3a1dc276.gpkg",
+      "source_id": "icv_municipios",
+      "url": "https://terramapas.icv.gva.es/0105_Delimitaciones?outputformat=gpkg&request=GetFeature&service=WFS&typename=ICV.Municipios&version=2.0.0"
+    },
+    "municipios_112cv": {
+      "catalog_url": null,
+      "final_url": "https://wpr.112cv.gva.es/wp/api/municipios",
+      "format": "JSON",
+      "http": {
+        "response_headers": {
+          "content-type": "application/json",
+          "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+        },
+        "status": 200
+      },
+      "inspection": {
+        "assigned_municipalities": 542,
+        "dataset_content_sha256": "a1a2c18581507e2c19167a5cd9633110abddd8484bf93296be23ee88f54c6d06",
+        "fields": [
+          "idZonaAvisoMeteo",
+          "idZonaEmergencia",
+          "idZonaPrevifoc",
+          "municipio"
+        ],
+        "format": "JSON",
+        "manual_samples": [
+          {
+            "idZonaAvisoMeteo": 9,
+            "idZonaEmergencia": 21,
+            "idZonaPrevifoc": 56,
+            "municipio": "Ademuz"
+          },
+          {
+            "idZonaAvisoMeteo": 10,
+            "idZonaEmergencia": 27,
+            "idZonaPrevifoc": 57,
+            "municipio": "València"
+          },
+          {
+            "idZonaAvisoMeteo": 4,
+            "idZonaEmergencia": 44,
+            "idZonaPrevifoc": 59,
+            "municipio": "Alacant/Alicante"
+          }
+        ],
+        "media_type": "application/json",
+        "outside_cv_records": 1,
+        "rows": 543,
+        "zone_counts": {
+          "53": 28,
+          "54": 64,
+          "55": 40,
+          "56": 113,
+          "57": 61,
+          "58": 190,
+          "59": 46
+        }
+      },
+      "license": {
+        "declared_license": null,
+        "evidence_urls": [
+          "https://wpr.112cv.gva.es/wp/api/municipios",
+          "https://www.112cv.gva.es/es/incendios-forestales"
+        ],
+        "note": "No se ha encontrado una licencia especifica ni condiciones de API publicadas; el acceso publico no se interpreta como licencia.",
+        "status": "not_found"
+      },
+      "publisher": "112 Comunitat Valenciana / Generalitat Valenciana",
+      "request": {
+        "accept": "application/json",
+        "user_agent": "OsmAnd-incendios-GEO-001/1.0 (reproducible official-source snapshot)"
+      },
+      "retrieved_at_utc": "2026-07-18T06:48:28Z",
+      "sha256": "5d80c0b9a40c29beca831c964ef11b254d0f5a0c5c765acd77dc355ddd54370d",
+      "size_bytes": 49694,
+      "snapshot": "snapshots/municipios_112cv/5d80c0b9a40c29beca831c964ef11b254d0f5a0c5c765acd77dc355ddd54370d.json",
+      "source_id": "municipios_112cv",
+      "url": "https://wpr.112cv.gva.es/wp/api/municipios"
+    }
+  }
+}

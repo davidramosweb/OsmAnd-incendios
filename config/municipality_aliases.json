@@ -1,0 +1,192 @@
+{
+  "aliases": [
+    {
+      "cod_ine_mun": "46026",
+      "expected_icv": {
+        "nom_mun": "Alfarb",
+        "noms_mun": "Alfarb"
+      },
+      "municipio_112cv": "Alfarp",
+      "reason": "El 112CV publica Alfarp y el ICV publica Alfarb en todas sus variantes; se fija la diferencia ortográfica final p/b.",
+      "review": {
+        "basis": "Comparación manual de la fila 112CV con el código y todas las variantes nominales de la fila ICV.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "46028",
+      "expected_icv": {
+        "nom_mun": "Algar de Palància",
+        "noms_mun": "Algar de Palància"
+      },
+      "municipio_112cv": "Algar de Palancia",
+      "reason": "La única diferencia es el acento de Palància en la denominación ICV; no se elimina el acento automáticamente.",
+      "review": {
+        "basis": "Comparación manual de la fila 112CV con el código y todas las variantes nominales de la fila ICV.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "12901",
+      "expected_icv": {
+        "nom_mun": "les Alqueries",
+        "noms_mun": "les Alqueries/Alquerías del Niño Perdido"
+      },
+      "municipio_112cv": "Alqueries, les/Alquerías del Niño Perdido",
+      "reason": "El 112CV pospone el artículo valenciano; el ICV lo antepone en la forma bilingüe.",
+      "review": {
+        "basis": "Comparación manual de ambas formas lingüísticas y del artículo con la fila ICV completa.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "03051",
+      "expected_icv": {
+        "nom_mun": "el Camp de Mirra",
+        "noms_mun": "el Camp de Mirra/Campo de Mirra"
+      },
+      "municipio_112cv": "Camp de Mirra, el/Campo de Mirra",
+      "reason": "El 112CV pospone el artículo valenciano; el ICV lo antepone en la forma bilingüe.",
+      "review": {
+        "basis": "Comparación manual de ambas formas lingüísticas y del artículo con la fila ICV completa.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "03077",
+      "expected_icv": {
+        "nom_mun": "el Fondó de les Neus",
+        "noms_mun": "el Fondó de les Neus/Hondón de las Nieves"
+      },
+      "municipio_112cv": "Fondó de les Neus, el/Hondón de las Nieves",
+      "reason": "El 112CV pospone el artículo valenciano; el ICV lo antepone en la forma bilingüe.",
+      "review": {
+        "basis": "Comparación manual de ambas formas lingüísticas y del artículo con la fila ICV completa.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "46180",
+      "expected_icv": {
+        "nom_mun": "Novetlè",
+        "noms_mun": "Novetlè"
+      },
+      "municipio_112cv": "Novetlè/Novelé",
+      "reason": "El 112CV publica una forma bilingüe y el ICV solo conserva Novetlè en sus variantes nominales.",
+      "review": {
+        "basis": "Comparación manual de la forma valenciana compartida y de la fila ICV completa.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "03084",
+      "expected_icv": {
+        "nom_mun": "l'Orxa",
+        "noms_mun": "l'Orxa/Lorcha"
+      },
+      "municipio_112cv": "Orxa, l'/Lorcha",
+      "reason": "El 112CV pospone el artículo apostrofado; el ICV lo antepone en la forma bilingüe.",
+      "review": {
+        "basis": "Comparación manual de ambas formas lingüísticas, el apóstrofo y las variantes ICV.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "12093",
+      "expected_icv": {
+        "nom_mun": "La Pobla de Benifassà",
+        "noms_mun": "La Pobla de Benifassà"
+      },
+      "municipio_112cv": "Pobla de Benifassà, la",
+      "reason": "El 112CV pospone y escribe en minúscula el artículo; el ICV lo antepone como La.",
+      "review": {
+        "basis": "Comparación manual del artículo y de todas las variantes nominales de la fila ICV.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "03042",
+      "expected_icv": {
+        "nom_mun": "el Poble Nou de Benitatxell",
+        "noms_mun": "el Poble Nou de Benitatxell/Benitachell"
+      },
+      "municipio_112cv": "Poble Nou de Benitatxell, el/Benitachell",
+      "reason": "El 112CV pospone el artículo valenciano; el ICV lo antepone en la forma bilingüe.",
+      "review": {
+        "basis": "Comparación manual de ambas formas lingüísticas y del artículo con la fila ICV completa.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "03132",
+      "expected_icv": {
+        "nom_mun": "la Torre de les Maçanes",
+        "noms_mun": "la Torre de les Maçanes/Torremanzanas"
+      },
+      "municipio_112cv": "Torre de les Maçanes, la/Torremanzanas",
+      "reason": "El 112CV pospone el artículo valenciano; el ICV lo antepone en la forma bilingüe.",
+      "review": {
+        "basis": "Comparación manual de ambas formas lingüísticas y del artículo con la fila ICV completa.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "12119",
+      "expected_icv": {
+        "nom_mun": "la Torre d'En Besora",
+        "noms_mun": "la Torre d'En Besora"
+      },
+      "municipio_112cv": "Torre d'en Besora, la",
+      "reason": "El 112CV pospone el artículo y usa en minúscula; el ICV antepone la y capitaliza En.",
+      "review": {
+        "basis": "Comparación manual del artículo, caja y apóstrofo con todas las variantes ICV.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "12122",
+      "expected_icv": {
+        "nom_mun": "les Useres",
+        "noms_mun": "les Useres/Useras"
+      },
+      "municipio_112cv": "Useres, les/Useras",
+      "reason": "El 112CV pospone el artículo valenciano; el ICV lo antepone en la forma bilingüe.",
+      "review": {
+        "basis": "Comparación manual de ambas formas lingüísticas y del artículo con la fila ICV completa.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    },
+    {
+      "cod_ine_mun": "03139",
+      "expected_icv": {
+        "nom_mun": "la Vila Joiosa",
+        "noms_mun": "la Vila Joiosa/Villajoyosa"
+      },
+      "municipio_112cv": "Vila Joiosa, la/Villajoyosa",
+      "reason": "El 112CV pospone el artículo valenciano; el ICV lo antepone en la forma bilingüe.",
+      "review": {
+        "basis": "Comparación manual de ambas formas lingüísticas y del artículo con la fila ICV completa.",
+        "reviewed_at": "2026-07-18",
+        "status": "approved"
+      }
+    }
+  ],
+  "applies_to": {
+    "icv_municipios_dataset_content_sha256": "f384ce5ec703a3f2ed4173337f8d80aa24e502cf015f2a3124f30a29506130df",
+    "icv_municipios_sha256": "acf27959034b7ad4610b413a6323f1b68e2e0d6d71d72ed74f25b96c3a1dc276",
+    "municipios_112cv_sha256": "5d80c0b9a40c29beca831c964ef11b254d0f5a0c5c765acd77dc355ddd54370d"
+  },
+  "schema_version": 1
+}

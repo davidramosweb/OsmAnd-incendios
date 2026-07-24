@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+
+# WORKER-001 generated and local-only files
+node_modules/
+public/
+dist/
+.wrangler/
+.dev.vars*
+!.dev.vars.example
+
+# Local Cloudflare tunnel configuration (contains infrastructure metadata)
+deploy/osmand-001/cloudflared.active.yml

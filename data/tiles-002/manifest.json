@@ -1,0 +1,1225 @@
+{
+  "assets": {
+    "bytes_total": 7446676,
+    "deployment_templates": 9508,
+    "limit": 19000,
+    "passes_limit": true,
+    "total": 9515
+  },
+  "controls": {
+    "controls/z10-overview.png": {
+      "dimensions_pixels": [
+        981,
+        1526
+      ],
+      "sha256": "9cfaad577d37153ad51ace7f8cdf1faf2d9e5d8f54c8609e31373f6655999dfa",
+      "size_bytes": 37371,
+      "source_tile_pixel_size": 109,
+      "tile_bounds_xyz": [
+        507,
+        384,
+        513,
+        395
+      ]
+    },
+    "controls/z14-overview.png": {
+      "dimensions_pixels": [
+        832,
+        1408
+      ],
+      "sha256": "08f78388ae0a0ca41d4f1fe5ce4d0ebb02558e766156bbb7d6bcf0783e31323c",
+      "size_bytes": 27094,
+      "source_tile_pixel_size": 8,
+      "tile_bounds_xyz": [
+        8122,
+        6155,
+        8223,
+        6328
+      ]
+    },
+    "controls/z14-seam-detail.png": {
+      "dimensions_pixels": [
+        512,
+        256
+      ],
+      "direction": "east",
+      "origin_xyz": [
+        8213,
+        6173
+      ],
+      "sha256": "26e21a65e55000972591df07d9bdc4cbb7b63b3081a85a1b9f2b8fa03eb89cfd",
+      "size_bytes": 3070
+    },
+    "controls/z6-overview.png": {
+      "dimensions_pixels": [
+        1024,
+        768
+      ],
+      "sha256": "1c3a9a79df1a44ed9b62b5f58f7b195ea4859961269c26a75893f162c53eabad",
+      "size_bytes": 5999,
+      "source_tile_pixel_size": 256,
+      "tile_bounds_xyz": [
+        31,
+        24,
+        32,
+        24
+      ]
+    }
+  },
+  "format_version": "previfoc-indexed-template-v2",
+  "geometry_version": "sha256:e2fe8dfca6e62bf40a7a1ff2e6b07677a7dcb890925a68d87c2a756e7884beb0",
+  "inputs": {
+    "crosswalk": {
+      "path": "../crosswalk/crosswalk.csv",
+      "sha256": "0ca0ed22ccaaa6994d4701bd75da1d1355fcb945f4e7dfaf1b22472743294876"
+    },
+    "geo004_manifest": {
+      "path": "../geo-004/manifest.json",
+      "sha256": "5c0066a83f255323196121003b0164f1e2bb80ed8bb01125c75592ca1847375e"
+    },
+    "geojson": {
+      "path": "../zones/zones.geojson",
+      "sha256": "b76ffaeec4eb9c75ee23991ed9386136d74d94a5bc2603700d65b37e6fb528c2"
+    },
+    "master": {
+      "crs": "EPSG:25830",
+      "path": "../zones/zones.gpkg",
+      "sha256": "e2fe8dfca6e62bf40a7a1ff2e6b07677a7dcb890925a68d87c2a756e7884beb0"
+    }
+  },
+  "pyramid": {
+    "by_zoom": {
+      "10": {
+        "bounds_xyz": [
+          507,
+          384,
+          513,
+          395
+        ],
+        "bytes": 56477,
+        "inventory_sha256": "79ae3a6703257628ee85f946538ded79e7e494546765eb610686b95b3f47a0e7",
+        "tiles": 50
+      },
+      "11": {
+        "bounds_xyz": [
+          1015,
+          769,
+          1027,
+          791
+        ],
+        "bytes": 146912,
+        "inventory_sha256": "3f3a8822eedbb65cdda1c93840238251937bd381ae904ed6bd0881c758c281a6",
+        "tiles": 151
+      },
+      "12": {
+        "bounds_xyz": [
+          2030,
+          1538,
+          2055,
+          1582
+        ],
+        "bytes": 417144,
+        "inventory_sha256": "249ec468c07dd35461519a4a8b37cf621bf5098b5f20dc79938372cecc8aeb62",
+        "tiles": 501
+      },
+      "13": {
+        "bounds_xyz": [
+          4061,
+          3077,
+          4111,
+          3164
+        ],
+        "bytes": 1323703,
+        "inventory_sha256": "01325afcbd15a32508b733fe48958dd66b5c95a0930d758c4ceff7ac5c6e80cb",
+        "tiles": 1838
+      },
+      "14": {
+        "bounds_xyz": [
+          8122,
+          6155,
+          8223,
+          6328
+        ],
+        "bytes": 4572407,
+        "inventory_sha256": "8efb43af1a49cf329d067c68b8c6ab87d5f2687fa10c5540b2d09199278bd938",
+        "tiles": 6934
+      },
+      "6": {
+        "bounds_xyz": [
+          31,
+          24,
+          32,
+          24
+        ],
+        "bytes": 2098,
+        "inventory_sha256": "f5d180fde5b5681f4e5c9ed66ca315017c58ff8516d60604e6c9556aae81c0cd",
+        "tiles": 2
+      },
+      "7": {
+        "bounds_xyz": [
+          63,
+          48,
+          64,
+          49
+        ],
+        "bytes": 4547,
+        "inventory_sha256": "2418a942f58d410c5b56f0c2d03eaeb6702699de03a699dead749be38671058a",
+        "tiles": 4
+      },
+      "8": {
+        "bounds_xyz": [
+          126,
+          96,
+          128,
+          98
+        ],
+        "bytes": 9611,
+        "inventory_sha256": "b7a437e0d666c63f592815abbae620e8b54690a56d686b5cb90fa514c95949e7",
+        "tiles": 8
+      },
+      "9": {
+        "bounds_xyz": [
+          253,
+          192,
+          256,
+          197
+        ],
+        "bytes": 23443,
+        "inventory_sha256": "78ba2743e2b22722f952b4d8439ce400787e6708ee0a87bd159d4fdd6b502b6b",
+        "tiles": 19
+      }
+    },
+    "crs_render": "EPSG:3857",
+    "inventory": {
+      "path": "tiles.sha256",
+      "sha256": "464e34c9db51811977898fea42d5b17c2ba0e5b25d09feb292aac60790121480",
+      "size_bytes": 788711
+    },
+    "path_template": "{z}/{x}/{y}.png",
+    "tile_assets": 9507,
+    "tile_bytes": 6556342,
+    "tile_size": [
+      256,
+      256
+    ],
+    "transparent": {
+      "path": "transparent.png",
+      "sha256": "679644f8ef3768bbe373bc2db7d50c3d9f133013cb927154fc920a4471616809",
+      "size_bytes": 229
+    },
+    "xyz_y_axis": "north_to_south_not_inverted",
+    "zooms": [
+      6,
+      14
+    ]
+  },
+  "render": {
+    "boundary_index": 15,
+    "boundary_width_pixels": 2,
+    "canonical_crs_unchanged": "EPSG:25830",
+    "fill_indices": {
+      "53": 1,
+      "54": 2,
+      "55": 3,
+      "56": 4,
+      "57": 5,
+      "58": 6,
+      "59": 7
+    },
+    "hatch_indices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "hatch_spacing_pixels": 12,
+    "hatch_width_pixels": 2,
+    "overscan_pixels": 8,
+    "strategy": "global Web Mercator pixel grid; clipped with overscan; central crop"
+  },
+  "reports": {
+    "REPORT.md": {
+      "sha256": "66b14038eea6536b9076650e9f836573b6d7c0ff6c0575b3dfb7a7eb882ada2e",
+      "size_bytes": 3483
+    }
+  },
+  "schema_version": 1,
+  "software": {
+    "geos": "3.13.1",
+    "pillow": "11.3.0",
+    "proj": "9.5.1",
+    "pyproj": "3.7.2",
+    "python": "3.13.2",
+    "python_implementation": "CPython",
+    "shapely": "2.1.2"
+  },
+  "status": "complete",
+  "verification": {
+    "continuity": {
+      "checks": [
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 70,
+          "origin_xyz": [
+            31,
+            24
+          ],
+          "zoom": 6
+        },
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 108,
+          "origin_xyz": [
+            63,
+            48
+          ],
+          "zoom": 7
+        },
+        {
+          "direction": "south",
+          "nontransparent_edge_score": 85,
+          "origin_xyz": [
+            63,
+            48
+          ],
+          "zoom": 7
+        },
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 197,
+          "origin_xyz": [
+            127,
+            96
+          ],
+          "zoom": 8
+        },
+        {
+          "direction": "south",
+          "nontransparent_edge_score": 206,
+          "origin_xyz": [
+            127,
+            96
+          ],
+          "zoom": 8
+        },
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            254,
+            196
+          ],
+          "zoom": 9
+        },
+        {
+          "direction": "south",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            255,
+            195
+          ],
+          "zoom": 9
+        },
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            511,
+            386
+          ],
+          "zoom": 10
+        },
+        {
+          "direction": "south",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            512,
+            385
+          ],
+          "zoom": 10
+        },
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            1025,
+            772
+          ],
+          "zoom": 11
+        },
+        {
+          "direction": "south",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            1025,
+            772
+          ],
+          "zoom": 11
+        },
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            2052,
+            1543
+          ],
+          "zoom": 12
+        },
+        {
+          "direction": "south",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            2052,
+            1543
+          ],
+          "zoom": 12
+        },
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            4106,
+            3086
+          ],
+          "zoom": 13
+        },
+        {
+          "direction": "south",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            4106,
+            3086
+          ],
+          "zoom": 13
+        },
+        {
+          "direction": "east",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            8213,
+            6173
+          ],
+          "zoom": 14
+        },
+        {
+          "direction": "south",
+          "nontransparent_edge_score": 256,
+          "origin_xyz": [
+            8214,
+            6171
+          ],
+          "zoom": 14
+        }
+      ],
+      "method": "individual tiles equal the corresponding crops of a shared 2-tile render",
+      "pairs_checked": 17,
+      "unavailable_directions": [
+        {
+          "direction": "south",
+          "reason": "no adjacent covered pair",
+          "zoom": 6
+        }
+      ]
+    },
+    "determinism": "validate regenerates and compares every path byte-for-byte",
+    "geographic": {
+      "coast_east_extreme": {
+        "mercator": [
+          76845.52247378984,
+          4850847.877159527
+        ],
+        "pixel_xyz": [
+          103,
+          204
+        ],
+        "tile_xyz": [
+          14,
+          8223,
+          6208
+        ]
+      },
+      "internal_boundaries": [
+        {
+          "mercator": [
+            -21555.134847080306,
+            4908711.44838399
+          ],
+          "pixel_xyz": [
+            49,
+            36
+          ],
+          "shared_length_m": 72474.07468098559,
+          "tile_xyz": [
+            14,
+            8183,
+            6185
+          ],
+          "zone_ids": [
+            53,
+            54
+          ]
+        },
+        {
+          "mercator": [
+            10222.09690699914,
+            4934175.336709064
+          ],
+          "pixel_xyz": [
+            43,
+            187
+          ],
+          "shared_length_m": 115611.12334580226,
+          "tile_xyz": [
+            14,
+            8196,
+            6174
+          ],
+          "zone_ids": [
+            53,
+            55
+          ]
+        },
+        {
+          "mercator": [
+            -16739.221147991266,
+            4862203.92633506
+          ],
+          "pixel_xyz": [
+            41,
+            40
+          ],
+          "shared_length_m": 93165.56678839434,
+          "tile_xyz": [
+            14,
+            8185,
+            6204
+          ],
+          "zone_ids": [
+            54,
+            55
+          ]
+        },
+        {
+          "mercator": [
+            -60524.18472101634,
+            4846873.560967527
+          ],
+          "pixel_xyz": [
+            66,
+            110
+          ],
+          "shared_length_m": 82469.58478205107,
+          "tile_xyz": [
+            14,
+            8167,
+            6210
+          ],
+          "zone_ids": [
+            54,
+            56
+          ]
+        },
+        {
+          "mercator": [
+            -35429.07722164988,
+            4836946.481923704
+          ],
+          "pixel_xyz": [
+            128,
+            125
+          ],
+          "shared_length_m": 2361.3710915724246,
+          "tile_xyz": [
+            14,
+            8177,
+            6214
+          ],
+          "zone_ids": [
+            54,
+            57
+          ]
+        },
+        {
+          "mercator": [
+            -29461.38164512866,
+            4829080.244256767
+          ],
+          "pixel_xyz": [
+            242,
+            179
+          ],
+          "shared_length_m": 19033.299907718167,
+          "tile_xyz": [
+            14,
+            8179,
+            6217
+          ],
+          "zone_ids": [
+            55,
+            57
+          ]
+        },
+        {
+          "mercator": [
+            -50253.72393206554,
+            4790290.603378225
+          ],
+          "pixel_xyz": [
+            119,
+            142
+          ],
+          "shared_length_m": 157860.83921402582,
+          "tile_xyz": [
+            14,
+            8171,
+            6233
+          ],
+          "zone_ids": [
+            56,
+            57
+          ]
+        },
+        {
+          "mercator": [
+            -55933.90166835514,
+            4737536.156779409
+          ],
+          "pixel_xyz": [
+            36,
+            33
+          ],
+          "shared_length_m": 144562.3105939826,
+          "tile_xyz": [
+            14,
+            8169,
+            6255
+          ],
+          "zone_ids": [
+            56,
+            58
+          ]
+        },
+        {
+          "mercator": [
+            -35573.21833148726,
+            4746013.859856475
+          ],
+          "pixel_xyz": [
+            118,
+            169
+          ],
+          "shared_length_m": 42561.79268183989,
+          "tile_xyz": [
+            14,
+            8177,
+            6251
+          ],
+          "zone_ids": [
+            57,
+            58
+          ]
+        },
+        {
+          "mercator": [
+            -69842.72128644738,
+            4648885.789264185
+          ],
+          "pixel_xyz": [
+            111,
+            94
+          ],
+          "shared_length_m": 144152.26310873622,
+          "tile_xyz": [
+            14,
+            8163,
+            6291
+          ],
+          "zone_ids": [
+            58,
+            59
+          ]
+        }
+      ],
+      "internal_boundaries_checked": 10,
+      "orientation_xyz": {
+        "north_y": 6155,
+        "passes": true,
+        "south_y": 6328
+      },
+      "transparent_exterior_xyz": [
+        14,
+        8121,
+        6155
+      ]
+    },
+    "png_contract_samples_per_zoom": 3,
+    "visual": {
+      "automatic_samples_per_zoom": 3,
+      "corner_pixels_checked": 108,
+      "exterior_alpha": 0,
+      "indices_observed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "samples": {
+        "10": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              4,
+              11,
+              15
+            ],
+            "xyz": [
+              507,
+              387
+            ]
+          },
+          {
+            "corner_indices": [
+              11,
+              5,
+              4,
+              6
+            ],
+            "indices_used": [
+              4,
+              5,
+              6,
+              11,
+              12,
+              13,
+              15
+            ],
+            "xyz": [
+              510,
+              390
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              15
+            ],
+            "xyz": [
+              513,
+              388
+            ]
+          }
+        ],
+        "11": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              4,
+              11,
+              15
+            ],
+            "xyz": [
+              1015,
+              774
+            ]
+          },
+          {
+            "corner_indices": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "indices_used": [
+              7,
+              14
+            ],
+            "xyz": [
+              1020,
+              787
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              3,
+              15
+            ],
+            "xyz": [
+              1027,
+              776
+            ]
+          }
+        ],
+        "12": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "indices_used": [
+              0,
+              4,
+              11,
+              15
+            ],
+            "xyz": [
+              2030,
+              1557
+            ]
+          },
+          {
+            "corner_indices": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "indices_used": [
+              4,
+              6,
+              11,
+              13,
+              15
+            ],
+            "xyz": [
+              2041,
+              1563
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              3,
+              10,
+              15
+            ],
+            "xyz": [
+              2055,
+              1552
+            ]
+          }
+        ],
+        "13": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "indices_used": [
+              0,
+              4,
+              11,
+              15
+            ],
+            "xyz": [
+              4061,
+              3114
+            ]
+          },
+          {
+            "corner_indices": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "indices_used": [
+              2,
+              9
+            ],
+            "xyz": [
+              4083,
+              3100
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              3,
+              10,
+              15
+            ],
+            "xyz": [
+              4111,
+              3105
+            ]
+          }
+        ],
+        "14": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              4,
+              11,
+              15
+            ],
+            "xyz": [
+              8122,
+              6229
+            ]
+          },
+          {
+            "corner_indices": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "indices_used": [
+              4,
+              11
+            ],
+            "xyz": [
+              8166,
+              6217
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              3,
+              10,
+              15
+            ],
+            "xyz": [
+              8223,
+              6208
+            ]
+          }
+        ],
+        "6": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "xyz": [
+              31,
+              24
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              1,
+              3,
+              6,
+              8,
+              10,
+              13,
+              15
+            ],
+            "xyz": [
+              32,
+              24
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              1,
+              3,
+              6,
+              8,
+              10,
+              13,
+              15
+            ],
+            "xyz": [
+              32,
+              24
+            ]
+          }
+        ],
+        "7": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              6
+            ],
+            "indices_used": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15
+            ],
+            "xyz": [
+              63,
+              48
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              0,
+              6,
+              0
+            ],
+            "indices_used": [
+              0,
+              1,
+              3,
+              6,
+              8,
+              10,
+              13,
+              15
+            ],
+            "xyz": [
+              64,
+              48
+            ]
+          },
+          {
+            "corner_indices": [
+              6,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              6,
+              13,
+              15
+            ],
+            "xyz": [
+              64,
+              49
+            ]
+          }
+        ],
+        "8": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              4,
+              11,
+              15
+            ],
+            "xyz": [
+              126,
+              96
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              6,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              6,
+              7,
+              13,
+              14,
+              15
+            ],
+            "xyz": [
+              127,
+              98
+            ]
+          },
+          {
+            "corner_indices": [
+              6,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              6,
+              13,
+              15
+            ],
+            "xyz": [
+              128,
+              98
+            ]
+          }
+        ],
+        "9": [
+          {
+            "corner_indices": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              4,
+              11,
+              15
+            ],
+            "xyz": [
+              253,
+              193
+            ]
+          },
+          {
+            "corner_indices": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "indices_used": [
+              0,
+              1,
+              2,
+              3,
+              8,
+              9,
+              10,
+              15
+            ],
+            "xyz": [
+              255,
+              193
+            ]
+          },
+          {
+            "corner_indices": [
+              6,
+              0,
+              0,
+              0
+            ],
+            "indices_used": [
+              0,
+              6,
+              13,
+              15
+            ],
+            "xyz": [
+              256,
+              196
+            ]
+          }
+        ]
+      },
+      "visible_white_pixels": 0
+    }
+  }
+}

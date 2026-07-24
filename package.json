@@ -1,0 +1,27 @@
+{
+  "name": "previfoc-osmand-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.18.1",
+  "scripts": {
+    "build:osf": "python3 tools/osmand_package.py build",
+    "check:osf": "python3 tools/osmand_package.py validate",
+    "build:assets": "pnpm check:osf && node scripts/stage-assets.mjs",
+    "check:assets": "pnpm check:osf && node scripts/stage-assets.mjs --check",
+    "cf-typegen": "wrangler types",
+    "dev": "pnpm build:assets && wrangler dev --test-scheduled",
+    "typecheck": "tsc --noEmit && tsc --noEmit --project test/tsconfig.json",
+    "test:osf": "python3 -m unittest tests.test_osmand_package -v",
+    "test": "pnpm build:assets && vitest run && pnpm test:osf",
+    "deploy:dry-run": "pnpm build:assets && wrangler deploy --dry-run --outdir dist/worker-dry-run && node scripts/check-bundle.mjs dist/worker-dry-run",
+    "refresh:production": "node scripts/force-production-refresh.mjs",
+    "deploy": "pnpm build:assets && pnpm check:assets && wrangler deploy && pnpm refresh:production"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "0.18.6",
+    "typescript": "7.0.2",
+    "vitest": "4.1.10",
+    "wrangler": "4.112.0"
+  }
+}

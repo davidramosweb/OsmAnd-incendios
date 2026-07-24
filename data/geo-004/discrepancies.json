@@ -1,0 +1,58 @@
+{
+  "discrepancies": [
+    {
+      "classification": "explicable",
+      "decision": "Conservar todas las partes canónicas; no filtrar ni modificar geometría.",
+      "evidence": "La geometría conserva 29, 5, 67 y 154 partes; varias proyectan menos de un píxel y no pueden distinguirse individualmente en la referencia.",
+      "id": "D01",
+      "location": "Microcomponentes costeros e insulares de zonas 2, 4, 5 y 6",
+      "possible_origin": [
+        "imagen o versión oficial",
+        "transformación exclusivamente visual usada en GEO-004"
+      ],
+      "zones": [
+        "2",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "classification": "explicable",
+      "decision": "No cuantificar como diferencia cartográfica; usar composición y detalles para inspección cualitativa.",
+      "evidence": "Se observan diferencias locales de grosor/antialiasing y posibles desplazamientos subpíxel, sin contradicción de asignación o forma.",
+      "id": "D02",
+      "location": "Costa y fronteras internas en toda la Comunitat",
+      "possible_origin": [
+        "imagen o versión oficial",
+        "geometría ICV",
+        "transformación exclusivamente visual usada en GEO-004"
+      ],
+      "zones": [
+        "1N",
+        "1S",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "classification": "explicable",
+      "decision": "Apoyar la revisión con render limpio y vista ampliada; no inferir una frontera oculta.",
+      "evidence": "La marca de agua y las etiquetas cubren parte de los contornos finos en la referencia.",
+      "id": "D03",
+      "location": "Centro: zonas 3, 4 y enclave de 5",
+      "possible_origin": [
+        "imagen o versión oficial"
+      ],
+      "zones": [
+        "3",
+        "4",
+        "5"
+      ]
+    }
+  ],
+  "schema_version": 1
+}

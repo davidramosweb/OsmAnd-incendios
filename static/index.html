@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173b35">
+    <meta
+      name="description"
+      content="Estado PREVIFOC por zonas e instalación de la capa no oficial para OsmAnd."
+    >
+    <title>PREVIFOC para OsmAnd</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="PREVIFOC para OsmAnd, inicio">
+        <span class="brand__mark" aria-hidden="true">P</span>
+        <span>PREVIFOC <small>para OsmAnd</small></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#estado">Estado</a>
+        <a href="#interpretar">Leyenda</a>
+        <a href="#instalar">Instalar</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">Comunitat Valenciana · 7 zonas forestales</p>
+          <h1 id="hero-title">El nivel PREVIFOC,<br><em>visible en OsmAnd.</em></h1>
+          <p class="hero__summary">
+            Una capa independiente que traslada el riesgo diario publicado por
+            112CV a una superposición sencilla para tus mapas. No es un mapa web
+            ni sustituye la información oficial.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="/previfoc.osf" download>
+              Descargar para OsmAnd
+            </a>
+            <a class="button button--quiet" href="#instalar">Ver cómo instalar</a>
+          </div>
+        </div>
+        <aside class="hero__note" aria-label="Qué muestra esta capa">
+          <span class="hero__note-number">01</span>
+          <p>Riesgo de hoy por zona</p>
+          <span class="hero__note-number">02</span>
+          <p>Cierre preventivo propio en nivel 3</p>
+          <span class="hero__note-number">03</span>
+          <p>Previsión de mañana con rayas</p>
+        </aside>
+      </section>
+
+      <section class="status-section" id="estado" aria-labelledby="status-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Consulta en directo</p>
+            <h2 id="status-title">Estado de las zonas</h2>
+          </div>
+          <a class="text-link" href="/status.json">Ver datos JSON <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="period-selector" aria-label="Periodo mostrado">
+          <button class="period-selector__button" type="button" data-period="current" aria-pressed="true">
+            Hoy
+          </button>
+          <button class="period-selector__button" type="button" data-period="forecast_next_day" aria-pressed="false">
+            Mañana
+          </button>
+        </div>
+
+        <div
+          class="status-card status-card--unavailable"
+          id="live-status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <span class="status-card__symbol" aria-hidden="true">?</span>
+          <div>
+            <p class="status-card__label">Estado de la capa</p>
+            <p class="status-card__title" id="status-summary">Sin consultar</p>
+            <p class="status-card__detail" id="status-detail">
+              Se necesita JavaScript para consultar automáticamente el estado actual.
+            </p>
+          </div>
+          <time class="status-card__time" id="status-time">Hora no disponible</time>
+        </div>
+
+        <noscript>
+          <p class="no-script">
+            La consulta automática está desactivada. Puede revisar el
+            <a href="/status.json">estado en formato JSON</a> y la
+            <a href="https://www.112cv.gva.es/es/incendios-forestales">fuente oficial 112CV</a>.
+          </p>
+        </noscript>
+
+        <ol class="zone-grid" aria-label="Niveles en las siete zonas PREVIFOC">
+          <li class="zone-card zone-card--unavailable" data-zone-id="53">
+            <span class="zone-card__code">1N</span>
+            <span class="zone-card__name">Zona 1 Norte</span>
+            <span class="zone-card__level">No disponible</span>
+          </li>
+          <li class="zone-card zone-card--unavailable" data-zone-id="54">
+            <span class="zone-card__code">1S</span>
+            <span class="zone-card__name">Zona 1 Sur</span>
+            <span class="zone-card__level">No disponible</span>
+          </li>
+          <li class="zone-card zone-card--unavailable" data-zone-id="55">
+            <span class="zone-card__code">2</span>
+            <span class="zone-card__name">Zona 2</span>
+            <span class="zone-card__level">No disponible</span>
+          </li>
+          <li class="zone-card zone-card--unavailable" data-zone-id="56">
+            <span class="zone-card__code">3</span>
+            <span class="zone-card__name">Zona 3</span>
+            <span class="zone-card__level">No disponible</span>
+          </li>
+          <li class="zone-card zone-card--unavailable" data-zone-id="57">
+            <span class="zone-card__code">4</span>
+            <span class="zone-card__name">Zona 4</span>
+            <span class="zone-card__level">No disponible</span>
+          </li>
+          <li class="zone-card zone-card--unavailable" data-zone-id="58">
+            <span class="zone-card__code">5</span>
+            <span class="zone-card__name">Zona 5</span>
+            <span class="zone-card__level">No disponible</span>
+          </li>
+          <li class="zone-card zone-card--unavailable" data-zone-id="59">
+            <span class="zone-card__code">6</span>
+            <span class="zone-card__name">Zona 6</span>
+            <span class="zone-card__level">No disponible</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="meaning-section" id="interpretar" aria-labelledby="meaning-title">
+        <div class="meaning-copy">
+          <p class="eyebrow">Antes de salir</p>
+          <h2 id="meaning-title">Un color orienta.<br>La realidad manda.</h2>
+          <p>
+            PREVIFOC expresa riesgo de incendio forestal. Esta capa añade una
+            regla deliberadamente conservadora para nivel 3; no determina que
+            una vía sea transitable en los demás niveles.
+          </p>
+
+          <div class="mandatory-notice" role="note" aria-label="Aviso importante">
+            <span aria-hidden="true">!</span>
+            <p>
+              <strong>Servicio no oficial.</strong> Criterio preventivo propio:
+              cuando PREVIFOC publica nivel 3, esta capa trata las pistas y sendas
+              forestales de la zona como cerradas al público únicamente en el
+              periodo actual. La capa de mañana es una previsión de riesgo y no
+              confirma un cierre futuro. Los niveles 1 y 2 no confirman que una
+              vía esté abierta. Consulte las autoridades y resoluciones aplicables.
+            </p>
+          </div>
+        </div>
+
+        <div class="legend" aria-labelledby="legend-title">
+          <h3 id="legend-title">Leyenda de la capa</h3>
+          <ul>
+            <li>
+              <span class="legend__swatch legend__swatch--level-1" aria-hidden="true">1</span>
+              <span><strong>Nivel 1</strong><small>No confirma apertura</small></span>
+            </li>
+            <li>
+              <span class="legend__swatch legend__swatch--level-2" aria-hidden="true">2</span>
+              <span><strong>Nivel 2</strong><small>No confirma apertura</small></span>
+            </li>
+            <li>
+              <span class="legend__swatch legend__swatch--level-3" aria-hidden="true">×</span>
+              <span><strong>Nivel 3</strong><small>Cerrado por criterio preventivo propio</small></span>
+            </li>
+            <li>
+              <span class="legend__swatch legend__swatch--forecast" aria-hidden="true">↗</span>
+              <span><strong>Rayado diagonal</strong><small>Previsión para mañana; no confirma cierres futuros</small></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="install-section" id="instalar" aria-labelledby="install-title">
+        <div class="install-intro">
+          <p class="eyebrow">Una instalación</p>
+          <h2 id="install-title">Añádela a OsmAnd</h2>
+          <p>
+            El paquete configura una superposición XYZ entre los niveles de zoom
+            6 y 14. Las teselas remotas se renuevan cada hora; no hace falta
+            descargar el instalador cada día.
+          </p>
+          <a class="button button--light" href="/previfoc.osf" download>
+            Descargar previfoc.osf
+          </a>
+          <p class="install-intro__availability">
+            Paquete versión 2.0.0. Instala dos fuentes: Hoy y Mañana. Si tenía
+            la versión 1, elimine primero «PREVIFOC (no oficial)» para evitar duplicados.
+          </p>
+        </div>
+
+        <div class="install-steps">
+          <ol>
+            <li>
+              <span>1</span>
+              <div><strong>Descarga el paquete</strong><p>Guarda <code>previfoc.osf</code> en el dispositivo.</p></div>
+            </li>
+            <li>
+              <span>2</span>
+              <div><strong>Ábrelo con OsmAnd</strong><p>Importa la fuente cuando la aplicación lo solicite.</p></div>
+            </li>
+            <li>
+              <span>3</span>
+              <div><strong>Elige Hoy o Mañana</strong><p>Ve a Configurar mapa → Superposición y selecciona la fuente PREVIFOC del periodo que quieras consultar.</p></div>
+            </li>
+          </ol>
+          <p class="platform-note">
+            En Android puede ser necesario activar antes el complemento
+            <strong>Mapas en línea</strong>. En iOS, use Compartir/Abrir con OsmAnd
+            y mantenga el mapa vectorial como principal.
+          </p>
+          <a class="text-link text-link--light" href="https://osmand.net/docs/user/map/raster-maps">
+            Guía oficial de mapas ráster de OsmAnd <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="limits-section" id="limitaciones" aria-labelledby="limits-title">
+        <div>
+          <p class="eyebrow">Uso responsable</p>
+          <h2 id="limits-title">Qué debes saber</h2>
+        </div>
+        <ul>
+          <li><strong>Puede haber errores o retrasos.</strong> Ante una discrepancia, prevalecen la fuente, la señalización y las indicaciones oficiales.</li>
+          <li><strong>No sustituye restricciones concretas.</strong> Compruebe resoluciones, cierres locales y órdenes de agentes antes de acceder.</li>
+          <li><strong>La geometría es derivada.</strong> Las zonas se reconstruyen a partir de municipios; no son polígonos PREVIFOC oficiales.</li>
+          <li><strong>Sin cobertura no hay actualización.</strong> OsmAnd puede conservar temporalmente teselas ya descargadas.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__brand">
+        <span class="brand__mark" aria-hidden="true">P</span>
+        <p><strong>PREVIFOC para OsmAnd</strong><br>Servicio independiente y no oficial.</p>
+      </div>
+      <div class="attribution" id="atribucion">
+        <p>
+          Riesgo reutilizado de
+          <a href="https://www.112cv.gva.es/es/incendios-forestales">112 Comunitat Valenciana / Generalitat Valenciana</a>.
+          Consulte también el
+          <a href="https://wpr.112cv.gva.es/external/api/storage/descargar/pdf/previfoc/previfoc.pdf">parte diario oficial PREVIFOC</a>.
+        </p>
+        <p>
+          Geometría derivada de
+          <a href="https://dadesobertes.gva.es/es/dataset/delimitacion-territorial-municipios-de-la-comunitat-valenciana">“Delimitación territorial: Municipios de la Comunitat Valenciana”</a>,
+          Institut Cartogràfic Valencià / Generalitat Valenciana,
+          <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a>.
+        </p>
+      </div>
+      <p class="emergency">En una emergencia, llame al <strong>112</strong>.</p>
+    </footer>
+  </body>
+</html>

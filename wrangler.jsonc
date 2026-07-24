@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "previfoc-osmand",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-18",
+  "workers_dev": true,
+  "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "previfoc.davidramosweb.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/health",
+      "/status.json",
+      "/previfoc.osf",
+      "/internal/*",
+      "/tiles/*"
+    ],
+    "html_handling": "none",
+    "not_found_handling": "none"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "PREVIFOC_STATE",
+      "id": "855480b5380e47b1881e1f178c6a92e7",
+      "preview_id": "3584deea553c46d29ddcde14661506d6"
+    }
+  ],
+  "triggers": {
+    "crons": ["7 * * * *"]
+  },
+  "observability": {
+    "enabled": false
+  }
+}

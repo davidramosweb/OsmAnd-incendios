@@ -1,0 +1,3 @@
+# Entorno reproducible de GEO-004; conserva exactamente GEO-003.
+-r requirements-geo.txt
+Pillow==11.3.0
